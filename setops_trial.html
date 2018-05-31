@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SET OPS TRIAL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/setops_trial.css">
+  </head>
+  <body>
+    <header class="lesson-box">
+      <div class="title"></div>
+      <div class="fgr"></div>
+    </header>
+    <section class="content">
+      <div id="Aempty" class="hidden">$$A = \emptyset$$</div>
+      <div id="Bempty" class="hidden">$$B = \emptyset$$</div>
+      <div id="AuBempty" class="hidden">$$A \cup B = \emptyset$$</div>
+      <div id="Cempty" class="hidden">$$C = \emptyset$$</div>
+      <div id="Dempty" class="hidden">$$D = \emptyset$$</div>
+      <div id="CnDempty" class="hidden">$$C \cap D = \emptyset$$</div>
+      <div id="Eempty" class="hidden">$$E = \emptyset$$</div>
+      <div id="Uempty" class="hidden">$$U = \emptyset$$</div>
+      <div id="UcompEempty" class="hidden">$$E^\complement = \emptyset$$</div>
+      <div id="A1" class="hidden">$$A = \{ 1 \}$$</div>
+      <div id="A2" class="hidden">$$A = \{ 2 \}$$</div>
+      <div id="A3" class="hidden">$$A = \{ 3 \}$$</div>
+      <div id="A12" class="hidden">$$A = \{ 1,2 \}$$</div>
+      <div id="A23" class="hidden">$$A = \{ 2,3 \}$$</div>
+      <div id="A13" class="hidden">$$A = \{ 1,3 \}$$</div>
+      <div id="A123" class="hidden">$$A = \{ 1,2,3 \}$$</div>
+      <div id="B1" class="hidden">$$B = \{ 1 \}$$</div>
+      <div id="B2" class="hidden">$$B = \{ 2 \}$$</div>
+      <div id="B3" class="hidden">$$B = \{ 3 \}$$</div>
+      <div id="B12" class="hidden">$$B = \{ 1,2 \}$$</div>
+      <div id="B23" class="hidden">$$B = \{ 2,3 \}$$</div>
+      <div id="B13" class="hidden">$$B = \{ 1,3 \}$$</div>
+      <div id="B123" class="hidden">$$B = \{ 1,2,3 \}$$</div>
+      <div id="C1" class="hidden">$$C = \{ 1 \}$$</div>
+      <div id="C2" class="hidden">$$C = \{ 2 \}$$</div>
+      <div id="C3" class="hidden">$$C = \{ 3 \}$$</div>
+      <div id="C12" class="hidden">$$C = \{ 1,2 \}$$</div>
+      <div id="C23" class="hidden">$$C = \{ 2,3 \}$$</div>
+      <div id="C13" class="hidden">$$C = \{ 1,3 \}$$</div>
+      <div id="C123" class="hidden">$$C = \{ 1,2,3 \}$$</div>
+      <div id="D1" class="hidden">$$D = \{ 1 \}$$</div>
+      <div id="D2" class="hidden">$$D = \{ 2 \}$$</div>
+      <div id="D3" class="hidden">$$D = \{ 3 \}$$</div>
+      <div id="D12" class="hidden">$$D = \{ 1,2 \}$$</div>
+      <div id="D23" class="hidden">$$D = \{ 2,3 \}$$</div>
+      <div id="D13" class="hidden">$$D = \{ 1,3 \}$$</div>
+      <div id="D123" class="hidden">$$D = \{ 1,2,3 \}$$</div>
+      <div id="E1" class="hidden">$$E = \{ 1 \}$$</div>
+      <div id="E2" class="hidden">$$E = \{ 2 \}$$</div>
+      <div id="E3" class="hidden">$$E = \{ 3 \}$$</div>
+      <div id="E12" class="hidden">$$E = \{ 1,2 \}$$</div>
+      <div id="E23" class="hidden">$$E = \{ 2,3 \}$$</div>
+      <div id="E13" class="hidden">$$E = \{ 1,3 \}$$</div>
+      <div id="E123" class="hidden">$$E = \{ 1,2,3 \}$$
+      </div>
+      <div id="U123" class="hidden">$$U = \{ 1,2,3 \}$$</div>
+      <div id="AuB1" class="hidden">$$A \cup B = \{ 1 \}$$</div>
+      <div id="AuB2" class="hidden">$$A \cup B = \{ 2 \}$$</div>
+      <div id="AuB3" class="hidden">$$A \cup B = \{ 3 \}$$</div>
+      <div id="AuB12" class="hidden">$$A \cup B = \{ 1,2 \}$$</div>
+      <div id="AuB23" class="hidden">$$A \cup B = \{ 2,3 \}$$</div>
+      <div id="AuB13" class="hidden">$$A \cup B = \{ 1,3 \}$$</div>
+      <div id="AuB123" class="hidden">$$A \cup B = \{ 1,2,3 \}$$</div>
+      <div id="CnD1" class="hidden">$$C \cap D = \{ 1 \}$$</div>
+      <div id="CnD2" class="hidden">$$C \cap D = \{ 2 \}$$</div>
+      <div id="CnD3" class="hidden">$$C \cap D = \{ 3 \}$$</div>
+      <div id="CnD12" class="hidden">$$C \cap D = \{ 1,2 \}$$</div>
+      <div id="CnD23" class="hidden">$$C \cap D = \{ 2,3 \}$$</div>
+      <div id="CnD13" class="hidden">$$C \cap D = \{ 1,3 \}$$</div>
+      <div id="CnD123" class="hidden">$$C \cap D = \{ 1,2,3 \}$$</div>
+      <div id="UcompE1" class="hidden">$$E^\complement = \{ 1 \}$$</div>
+      <div id="UcompE2" class="hidden">$$E^\complement = \{ 2 \}$$</div>
+      <div id="UcompE3" class="hidden">$$E^\complement = \{ 3 \}$$</div>
+      <div id="UcompE12" class="hidden">$$E^\complement = \{ 1,2 \}$$</div>
+      <div id="UcompE23" class="hidden">$$E^\complement = \{ 2,3 \}$$</div>
+      <div id="UcompE13" class="hidden">$$E^\complement = \{ 1,3 \}$$</div>
+      <div id="UcompE123" class="hidden">$$E^\complement = \{ 1,2,3 \}$$</div>
+      <audio id="bassa" src="audio/mombassa.mp3"></audio>
+      <article>
+        <div id="intro">
+          <h1>Trial 3</h1>
+          <hr>
+          <h4>This is a time trial. You have 5 minutes to complete all 3 challenges. </h4>
+          <hr>
+          <input type="button" value="Begin" onclick="begin()">
+        </div>
+        <div id="trial" class="hidden">
+          <h1>Challenge 1</h1>
+          <hr>
+          <h4>Ensure that $\tiny A \cup B$ contains an odd number of elements.</h4>
+          <hr>
+          <article class="interaction">
+            <div id="item" class="drag-drop top"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop top"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop top"> 
+              <p>3</p>
+            </div>
+            <div id="item" class="drag-drop bottom"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop bottom"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop bottom"> 
+              <p>3</p>
+            </div>
+            <div id="b" class="dropzone">
+              <p>B</p>
+            </div>
+            <div id="a" class="dropzone">
+              <p>A</p>
+            </div>
+          </article>
+          <!--  #output.output-->
+          
+          <h1>Challenge 2</h1>
+          <hr>
+          <h4>Ensure that $\tiny A \cap B$ contains an even number of elements.</h4>
+          <hr>
+          <article class="interaction">
+            <div id="item" class="drag-drop top"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop top"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop top"> 
+              <p>3</p>
+            </div>
+            <div id="item" class="drag-drop bottom"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop bottom"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop bottom"> 
+              <p>3</p>
+            </div>
+            <div id="c" class="dropzone">
+              <p>C</p>
+            </div>
+            <div id="d" class="dropzone">
+              <p>D</p>
+            </div>
+          </article>
+          <!--  #outputIntersection.output-->
+          <h1>Challenge 3</h1>
+          <hr>
+          <h4>Ensure that the sum of the elements in $\tiny E$ is the same as in $\tiny E^\complement$.</h4>
+          <hr>
+          <article class="interaction compliment">
+            <div id="item" class="drag-drop top comp">
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop top comp"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop top comp"> 
+              <p>3</p>
+            </div>
+            <div id="e" class="dropzone">
+              <p>E</p>
+            </div>
+            <!--#outputComp.output-->
+          </article>
+          <hr>
+          <input type="button" value="Submit" onclick="submit()">
+          <div id="timer"> </div>
+        </div>
+      </article>
+    </section>
+  </body>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+      
+    </script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/setops_trial.js"></script>
+  </footer>
+</html>

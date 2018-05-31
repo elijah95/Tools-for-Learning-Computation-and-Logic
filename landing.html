@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MAIN</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/landing.css">
+  </head>
+  <body>
+    <header class="traffic-box">
+      <div class="logo"></div>
+      <div class="traffic"></div>
+    </header>
+    <section id="main" class="content">
+      <article>
+        <h1>Welcome</h1>
+        <div id="mySidenav" class="sidenav"><a href="javascript:void(0)" onclick="closeNav()" class="closebtn">×</a>
+          <h2 id="navTitle"></h2><a href="#" id="lesson">LESSON</a><a href="#" id="trial">TRIAL</a>
+        </div>
+        <!--p Class is in session! -->
+        <hr>
+        <div class="lessons">
+          <div class="row img-row">
+            <figure class="columns four"><span style="cursor:pointer" onclick="openNav(&quot;SETS&quot;,&quot;sets.html&quot;,&quot;sets_trial.html&quot;)"><img src="images/sets.png">
+                <figcaption>CHAPTER 1 - <strong>SETS</strong> </figcaption></span></figure>
+            <figure class="columns four"><span style="cursor:pointer" onclick="openNav(&quot;SUBSETS&quot;, &quot;subsets.html&quot;,&quot;subsets_trial.html&quot;)"><img src="images/subsets.png">
+                <figcaption>CHAPTER 2 - <strong>SUBSETS</strong> </figcaption></span></figure>
+            <figure class="columns four"><span style="cursor:pointer" onclick="openNav(&quot;SET OPS&quot;, &quot;setops.html&quot;,&quot;setops_trial.html&quot;)"><img src="images/setops.png">
+                <figcaption>CHAPTER 3 - <strong>SET OPS</strong> </figcaption></span></figure>
+          </div>
+          <div class="row img-row">
+            <figure class="columns four"><span style="cursor:pointer" onclick="openNav(&quot;SET BUILDERS&quot;,&quot;builders.html&quot;,&quot;builders_trial.html&quot;)"><img src="images/builders.png">
+                <figcaption>CHAPTER 4 - <strong>SET BUILDERS</strong> </figcaption></span></figure>
+            <figure class="columns four"><span style="cursor:pointer" onclick="openNav(&quot;PRODUCTS&quot;, &quot;products.html&quot;,&quot;products_trial.html&quot;)"><img src="images/products.png">
+                <figcaption>CHAPTER 5 - <strong>PRODUCTS</strong> </figcaption></span></figure>
+            <figure class="columns four"><span style="cursor:pointer" onclick="openNav(&quot;LOGIC&quot;, &quot;logic.html&quot;,&quot;logic_trial.html&quot;)"><img src="images/logic.png">
+                <figcaption>CHAPTER 6 - <strong>LOGIC</strong> </figcaption></span></figure>
+          </div>
+        </div>
+        <hr>
+      </article>
+    </section>
+  </body>
+  <footer id="ft">
+    <div class="row footer-stuff"><strong>FIND ME AT:</strong>
+      <ul>
+        <li><a href="mailto:s1450390@ed.ac.uk">s1450390@ed.ac.uk</a></li>
+      </ul>
+      <script src="js/functions.js"></script>
+    </div>
+  </footer>
+</html>

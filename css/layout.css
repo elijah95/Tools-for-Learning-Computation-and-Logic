@@ -1,0 +1,121 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #ccc;
+  weight: 300;
+}
+
+figure {
+  margin: auto;
+  position: relative;
+  background: white;
+}
+
+.content {
+  z-index: 3;
+  position: relative;
+  margin-bottom: 400px;
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.traffic-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../images/bird-bg.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background-image: url(../images/black-bird-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.traffic {
+  width: 960px;
+  height: 733px;
+  background-image: url(../images/fore-bird.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 380px;
+}
+
+.lessons {
+  margin-bottom: 100px;
+}
+
+.lessons figure {
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.lessons figure.is-showing {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.lessons figure img {
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.lessons figure:hover figcaption {
+  left: 0%;
+}
+
+.lessons figure:hover img {
+  transform: scale(1.2);
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: -100%;
+  background: black;
+  color: white;
+  padding: 2px 8px;
+  font-size: 11px;
+  transition: all 0.3s ease-in-out;
+}
+
+footer {
+  margin-top: 100px;
+  background: black;
+  color: white;
+  padding: 40px 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+footer .footer-stuff {
+  max-width: 640px;
+  margin: 0 auto;
+}

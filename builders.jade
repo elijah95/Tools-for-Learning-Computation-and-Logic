@@ -1,0 +1,90 @@
+//output: builders.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title BUILDERS
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/builders.css")
+    
+  body
+
+    header.lesson-box
+       .title
+       .fgr
+       
+    section.content
+      
+      article
+        h1 Multiset
+        
+        hr
+        p 
+        | Sometimes we speak of a multiset or a comprehension, which is a set whose elements are allowed to have a multiplicity 
+        | greater than 1. The expression $\{x \mid x \in S \land P(x)\}$ is interpreted as:  
+        | "the set of elements $x$ in $S$ such that $x$ has property $P$." and is formally refered 
+        | to as a $\it set$ $\it former$.  
+        hr
+        
+        article.interaction
+          #item.drag-drop.red.top 
+            p 1
+
+          #item.drag-drop.red.top 
+            p 2
+          
+          #item.drag-drop.red.top 
+            p 3
+        
+        
+          #item.drag-drop.blue.bottom 
+            p 1
+
+          #item.drag-drop.blue.bottom 
+            p 2
+          
+          #item.drag-drop.blue.bottom 
+            p 3
+        
+        
+          #compr.dropzone
+            p A
+
+
+          #emptyset.hidden $$\emptyset$$
+          
+          #1to3.hidden $$\{x \mid  1 \leq x \leq 3\}$$
+          #1to2.hidden $$\{x \mid  1 \leq x \leq 2\}$$
+          #2to3.hidden $$\{x \mid  2 \leq x \leq 3\}$$
+          
+          #red.hidden $$\{x \mid  Red(x)\}$$
+          #blue.hidden $$\{x \mid  Blue(x)\}$$
+
+          #odd.hidden $$\{x \mid   Odd(x)\}$$
+          #oddr.hidden $$\{x \mid  Odd(x) \land Red(x)\}$$
+          #oddb.hidden $$\{x \mid  Odd(x)\land Blue(x) \}$$
+          
+          #even.hidden $$\{x \mid   Even(x)\}$$
+          #evenr.hidden $$\{x \mid  Even(x) \land Red(x)\}$$
+          #evenb.hidden $$\{x \mid  Even(x) \land Blue(x) \}$$
+          
+        #output
+
+        hr  
+        input(type="button" value="Main" onclick="location.href='landing.html'")
+
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    script(src="js/builders2.js")
+
+
+
+
+        
+  

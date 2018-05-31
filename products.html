@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PRODUCTS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/products.css">
+  </head>
+  <body>
+    <header class="lesson-box">
+      <div class="title"></div>
+      <div class="fgr"></div>
+    </header>
+    <section class="content">
+      <article>
+        <h1>Cartesian Products</h1>
+        <hr>
+        <p>
+           
+          Let $A$ and $B$ be two sets. Then theproduct of $A$ and $B$, denoted $A \times B$, isdefined as the set of pairs in which the 
+          component is chosen from $A$ and thesecond component from $B$. That is $A \times B = \{(a, b)\mid a \in A \land b \in B\}$.
+        </p>
+        <h6>
+           
+          NOTE: The product of a set A with the empty set is the empty set i.e. $A \times \emptyset = \emptyset$ 
+        </h6>
+        <div id="Aempty" class="hidden">$$A = \emptyset$$</div>
+        <div id="Bempty" class="hidden">$$B = \emptyset$$</div>
+        <div id="AxBempty" class="hidden">$$A \times B = \emptyset$$</div>
+        <div id="Ared" class="hidden">$$A = \{ \color{red}{Red} \}$$</div>
+        <div id="Ablue" class="hidden">$$A = \{ \color{blue}{Blue} \}$$</div>
+        <div id="Agreen" class="hidden">$$A = \{ \color{green}{Green} \}$$</div>
+        <div id="Aredblue" class="hidden">$$A = \{ \color{red}{Red}, \color{blue}{Blue} \}$$</div>
+        <div id="Abluegreen" class="hidden">$$A = \{ \color{blue}{Blue}, \color{green}{Green}  \}$$</div>
+        <div id="Aredgreen" class="hidden">$$A = \{ \color{red}{Red} , \color{green}{Green} \}$$</div>
+        <div id="Aredbluegreen" class="hidden">$$A = \{ \color{red}{Red}, \color{blue}{Blue}, \color{green}{Green}  \}$$</div>
+        <!--#e6e6e6-->
+        <div id="Bbox" class="hidden">$$B = \{ \color{#bfbfbf}{Box} \}$$</div>
+        <div id="Bdisc" class="hidden">$$B = \{ \color{#bfbfbf}{Disc} \}$$</div>
+        <div id="Bstar" class="hidden">$$B = \{ \color{#bfbfbf}{Star} \}$$</div>
+        <div id="Bboxdisc" class="hidden">$$B = \{ \color{#bfbfbf}{Box}, \color{#bfbfbf}{Disc} \}$$</div>
+        <div id="Bboxstar" class="hidden">$$B = \{ \color{#bfbfbf}{Box}, \color{#bfbfbf}{Star} \}$$</div>
+        <div id="Bdiscstar" class="hidden">$$B = \{ \color{#bfbfbf}{Disc}, \color{#bfbfbf}{Star} \}$$</div>
+        <div id="Bboxdiscstar" class="hidden">$$B = \{ \color{#bfbfbf}{Box}, \color{#bfbfbf}{Disc}, \color{#bfbfbf}{Star}   \}$$</div>
+        <div id="AxB" class="hidden">$$A \times B = \{\langle x,y \rangle \mid x \in A \land y \in B \}$$</div>
+        <hr>
+        <article class="interaction">
+          <div class="dz">
+            <div id="line" class="dzcontainer">
+              <div id="red" class="item drag-drop top col red">
+                <p>Red</p>
+              </div>
+              <div id="blue" class="item drag-drop top col blue">
+                <p>Blue</p>
+              </div>
+              <div id="green" class="item drag-drop top col green">
+                <p>Green</p>
+              </div>
+              <div id="a" class="dropzone">
+                <p>A</p>
+              </div>
+            </div>
+            <div class="dzcontainer">
+              <div id="box" class="item drag-drop top shape"></div>
+              <div id="disc" class="item drag-drop top shape"> </div>
+              <div id="star" class="item drag-drop top shape"> </div>
+              <div id="boxstd" class="hidden">
+                <svg width="55" height="55">
+                  <rect x="1" y="1" rx="10" ry="10" width="50" height="50" style="fill:#e6e6e6;stroke:black;stroke-width:2;fill-rule:nonzero;"></rect>
+                </svg>
+              </div>
+              <div id="boxtrans" class="hidden"> 
+                <svg width="55" height="55">
+                  <rect x="1" y="1" rx="10" ry="10" width="50" height="50" style="fill:#2299ee;stroke:white;stroke-width:2;fill-rule:nonzero;"></rect>
+                </svg>
+              </div>
+              <div id="discstd" class="hidden"> 
+                <svg height="60" width="60">
+                  <circle cx="26" cy="26" r="25" stroke="black" stroke-width="2" fill="#e6e6e6"></circle>
+                </svg>
+              </div>
+              <div id="disctrans" class="hidden"> 
+                <svg height="60" width="60">
+                  <circle cx="30" cy="30" r="25" stroke="black" stroke-width="2" fill="#2299ee"></circle>
+                </svg>
+              </div>
+              <div id="starstd" class="hidden"> 
+                <svg height="55" width="55">
+                  <polygon points="26.666666666666668,2.6666666666666665,10.666666666666666,52.800000000000004,50.666666666666664,20.8,2.6666666666666665,20.8,42.666666666666664,52.800000000000004" style="fill:#e6e6e6;stroke:black;stroke-width:2;fill-rule:nonzero;"></polygon>
+                </svg>
+              </div>
+              <div id="startrans" class="hidden"> 
+                <svg height="55" width="55">
+                  <polygon points="26.666666666666668,2.6666666666666665,10.666666666666666,52.800000000000004,50.666666666666664,20.8,2.6666666666666665,20.8,42.666666666666664,52.800000000000004" style="fill:#2299ee;stroke:black;stroke-width:2;fill-rule:nonzero;"></polygon>
+                </svg>
+              </div>
+              <div id="b" class="dropzone">
+                <p>B</p>
+              </div>
+            </div>
+          </div>
+          <!--#output.output-->
+        </article>
+        <hr>
+        <div id="products">
+          <div id="includedContent"> </div>
+          <div id="noInclude">$$A \times B = \emptyset$$</div>
+        </div>
+        <div id="leftText"></div>
+        <div id="bottomText"></div>
+        <hr>
+        <input type="button" value="Main" onclick="location.href='landing.html'">
+      </article>
+    </section>
+  </body>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});    </script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+  </footer>
+</html>

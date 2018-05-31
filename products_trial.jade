@@ -1,0 +1,189 @@
+//output: products_trial.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title PRODUCTS TRIAL
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/products_trial.css")
+
+  body
+    header.lesson-box
+       .title
+       .fgr
+       
+    section.content
+    
+      audio(id="bassa" src="audio/mombassa.mp3")
+
+      #Aempty.hidden $$A = \emptyset$$
+      #Bempty.hidden $$B = \emptyset$$
+      #AxBempty.hidden $$A \times B = \emptyset$$
+
+      #Ared.hidden $$A = \{ \color{red}{Red} \}$$
+      #Ablue.hidden $$A = \{ \color{blue}{Blue} \}$$
+      #Agreen.hidden $$A = \{ \color{green}{Green} \}$$
+      #Aredblue.hidden $$A = \{ \color{red}{Red}, \color{blue}{Blue} \}$$
+      #Abluegreen.hidden $$A = \{ \color{blue}{Blue}, \color{green}{Green}  \}$$
+      #Aredgreen.hidden $$A = \{ \color{red}{Red} , \color{green}{Green} \}$$
+      #Aredbluegreen.hidden $$A = \{ \color{red}{Red}, \color{blue}{Blue}, \color{green}{Green}  \}$$
+      //#e6e6e6
+      #Bbox.hidden $$B = \{ \color{#bfbfbf}{Box} \}$$
+      #Bdisc.hidden $$B = \{ \color{#bfbfbf}{Disc} \}$$
+      #Bstar.hidden $$B = \{ \color{#bfbfbf}{Star} \}$$
+      #Bboxdisc.hidden $$B = \{ \color{#bfbfbf}{Box}, \color{#bfbfbf}{Disc} \}$$
+      #Bboxstar.hidden $$B = \{ \color{#bfbfbf}{Box}, \color{#bfbfbf}{Star} \}$$
+      #Bdiscstar.hidden $$B = \{ \color{#bfbfbf}{Disc}, \color{#bfbfbf}{Star} \}$$
+      #Bboxdiscstar.hidden $$B = \{ \color{#bfbfbf}{Box}, \color{#bfbfbf}{Disc}, \color{#bfbfbf}{Star}   \}$$
+      
+      #AxB.hidden $$A \times B = \{\langle x,y \rangle \mid x \in A \land y \in B \}$$
+      
+      
+        #boxstdr.hidden
+          svg(width="55" height="55")
+            rect(x="1" y="1" rx="10" ry="10" width="50" height="50"  style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+        
+        #boxstdb.hidden
+          svg(width="55" height="55")
+            rect(x="1" y="1" rx="10" ry="10" width="50" height="50"  style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+    
+        #boxstdg.hidden
+          svg(width="55" height="55")
+            rect(x="1" y="1" rx="10" ry="10" width="50" height="50"  style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+        
+        #boxtrans.hidden 
+          svg(width="55" height="55")
+            rect(x="1" y="1" rx="10" ry="10" width="50" height="50"  style="fill:#2299ee;stroke:white;stroke-width:2;fill-rule:nonzero;")
+            
+            
+            
+        #discstdr.hidden 
+          svg(height="60" width="60")
+            circle(cx="26" cy="26" r="25" stroke="black" stroke-width="2" fill="red")
+        
+        #discstdb.hidden 
+          svg(height="60" width="60")
+            circle(cx="26" cy="26" r="25" stroke="black" stroke-width="2" fill="blue")
+    
+        #discstdg.hidden 
+          svg(height="60" width="60")
+            circle(cx="26" cy="26" r="25" stroke="black" stroke-width="2" fill="green")
+    
+        #disctrans.hidden 
+          svg(height="60" width="60")
+            circle(cx="30" cy="30" r="25" stroke="black" stroke-width="2" fill="#2299ee")
+    
+    
+        - var bar = [26.666666666666668,2.6666666666666665,10.666666666666666,52.800000000000004,50.666666666666664,20.8,2.6666666666666665,20.8,42.666666666666664,52.800000000000004]
+
+            
+        #starstdr.hidden 
+          svg(height="55" width="55")
+            polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+        #starstdb.hidden 
+          svg(height="55" width="55")
+            polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+        #starstdg.hidden 
+          svg(height="55" width="55")
+            polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+                    
+                    
+        #startrans.hidden 
+          svg(height="55" width="55")
+            polygon(points=bar style="fill:#2299ee;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+            
+      article
+        #intro
+          h1 Trial 5
+          hr
+          h4 This is a time trial. You have 5 minutes to complete all 3 challenges. 
+          hr
+          
+          input(type="button" value="Begin" onclick="begin()")
+            
+        #trial.hidden
+          h1 Challenge 1
+          hr
+          h4 Suppose $\tiny C=\{Red, Blue\}$ and $\tiny S=\{Box, Disc\}$. Find all shapes in  $\tiny C \times S$.
+          hr
+          article.interaction
+            #boxr1.item.drag-drop.top
+            #discr1.item.drag-drop.top.disc
+            #starr1.item.drag-drop.top 
+            
+            #boxb1.item.drag-drop.mid
+            #discb1.item.drag-drop.mid.disc 
+            #starb1.item.drag-drop.mid 
+            
+            #boxg1.item.drag-drop.bottom
+            #discg1.item.drag-drop.bottom.disc 
+            #starg1.item.drag-drop.bottom 
+          
+            #a.dropzone
+              p $C \times S$
+              
+        
+          h1 Challenge 2
+          hr
+          h4 Suppose $\tiny C=\{Blue, Green\}$ and $\tiny S=\{Box, Disc, Star\}$. Find all shapes in  $\tiny C \times S$.
+          hr
+          article.interaction
+            #boxr2.item.drag-drop.top
+            #discr2.item.drag-drop.top.disc
+            #starr2.item.drag-drop.top 
+            
+            #boxb2.item.drag-drop.mid
+            #discb2.item.drag-drop.mid.disc 
+            #starb2.item.drag-drop.mid 
+            
+            #boxg2.item.drag-drop.bottom
+            #discg2.item.drag-drop.bottom.disc 
+            #starg2.item.drag-drop.bottom 
+          
+            #b.dropzone
+              p $C \times S$
+              
+          h1 Challenge 3
+          hr
+          h4 Suppose $\tiny C=\{Red, Blue, Green\}$ and $\tiny S=\{Disc, Star\}$. Find all shapes in  $\tiny C \times S$.
+          hr
+          article.interaction
+            #boxr3.item.drag-drop.top
+            #discr3.item.drag-drop.top.disc
+            #starr3.item.drag-drop.top 
+            
+            #boxb3.item.drag-drop.mid
+            #discb3.item.drag-drop.mid.disc 
+            #starb3.item.drag-drop.mid 
+            
+            #boxg3.item.drag-drop.bottom
+            #discg3.item.drag-drop.bottom.disc 
+            #starg3.item.drag-drop.bottom 
+          
+            #c.dropzone
+              p $C \times S$
+          hr
+          
+          input(type="button" value="Submit" onclick="submit()")
+          #timer  
+                      
+
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});    
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    script(src="js/products_trial.js")
+
+
+
+
+
+        
+  

@@ -1,0 +1,93 @@
+//output: sets.html
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title SETS
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/sets.css")
+    
+  body
+
+    header.lesson-box
+     .title
+       
+    section.content
+      
+      article
+        
+        h1 Basic Definitions
+        
+        hr
+        p In mathematics, the term "set" is not defined explicitly. Rather, like terms such as "point" and "line" in geometry, the term set is defined by its properties. Specifically,there is a notion of membership that makes sense only for sets. When $S$ is a set and $x$ is anything, we can ask the question, "Is $x$ a member of set $S$?"  The set $S$ then consists of all those elements $x$ for which $x$ is a member of $S$. The following points summarize some important notations for talking about sets.
+      
+        ol
+          li The expression $x \in S$ means that the element $x$ is a member of the set $S$.
+          li If  $x_1, x_2, \dots, x_n$ are all the members of set $S$, then we can write $S={x_1, x_2, \dots, x_n}.$
+          li The empty set, denoted $\emptyset$, is the set that has no members. That is, $x \in \emptyset$ is false, no matter what $x$ is.
+  
+              
+        hr
+        
+        article.interaction
+          
+          #emptyset.hidden $$\emptyset$$
+          #subs.hidden 
+          #membs.hidden 
+          #compls.hidden 
+          
+          #red.hidden  $$\{ Red \}$$
+          #blue.hidden  $$\{ Blue \}$$
+          #green.hidden  $$\{ Green \}$$
+          
+          #redblue.hidden  $$\{ Red, Blue \}$$
+          #redgreen.hidden  $$\{ Red, Green \}$$
+          #bluegreen.hidden  $$\{ Blue, Green \}$$
+          
+          
+          #redina.hidden $$ Red \in A $$
+          #blueina.hidden $$ Blue \in A $$
+          #greenina.hidden $$ Green \in A $$
+          
+          #rednotina.hidden $$ Red \notin A$$
+          #bluenotina.hidden $$ Blue \notin A$$
+          #greennotina.hidden $$ Green \notin A$$
+          
+          #redbluegreen.hidden  $$\{ Red, Blue, Green \}$$
+      
+          #item.drag-drop.red 
+            p Red
+
+          #item.drag-drop.blue 
+            p Blue
+          
+          #item.drag-drop.green 
+            p Green
+        
+          #set.dropzone
+            p A
+          
+          #output
+          
+          #membership 
+          
+
+        hr  
+        input(type="button" value="Main" onclick="location.href='landing.html'")
+
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    script(src="js/sets2.js")
+
+
+
+
+        
+  

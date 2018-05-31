@@ -1,0 +1,135 @@
+//output: logic_trial.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title LOGIC
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/logic_trial.css")
+    
+  body
+
+    header.lesson-box
+     .title
+     .fgr
+       
+    section.content
+    
+      audio(id="bassa" src="audio/mombassa.mp3")
+
+      #p.hidden p
+      #notp.hidden $\color{red}\lnot$p
+      #notpclear.hidden $\lnot$p
+
+      
+      #q.hidden q
+      #notq.hidden $\color{red}\lnot$q
+      #notqclear.hidden $\lnot$q
+
+              //-
+                #and.hidden $\land$
+                #or.hidden $\lor$
+                #not.hidden $\lnot$
+
+                #ptrue.hidden  $$p = \color{blue}{true}$$
+                #pfalse.hidden  $$p = \color{red}{false}$$
+                
+                #qtrue.hidden  $$q = \color{blue}{true}$$
+                #qfalse.hidden  $$q = \color{red}{false}$$
+                
+                #notptrue.hidden  $$\lnot p = \color{blue}{true}$$
+                #notpfalse.hidden  $$\lnot p = \color{red}{false}$$
+                
+                #notqtrue.hidden  $$\lnot q = \color{blue}{true}$$
+                #notqfalse.hidden  $$\lnot q = \color{red}{false}$$
+
+
+                #andtrue.hidden  $$p \land q =  \color{blue}{true}$$
+                #andfalse.hidden  $$p \land q = \color{red}{false}$$
+                
+                #ortrue.hidden  $$p \lor q =  \color{blue}{true}$$
+                #orfalse.hidden  $$p \lor q = \color{red}{false}$$
+                
+                #demPandQ.hidden $\not p \lor \not q$
+                #demNandQ.hidden $ p \lor \not q$
+                #demPandN.hidden $\not p \lor q$
+                #demNandN.hidden $ p \lor q$
+                
+                #demPorQ.hidden $\not p \land \not q$
+                #demNorQ.hidden $ p \land \not q$
+                #demPorN.hidden $\not p \land q$
+                #demNorN.hidden $ p \land q$
+                
+                #xortrue.hidden  $$p \oplus q = \color{blue}{true}$$
+                #xorfalse.hidden  $$p \oplus q = \color{red}{false}$$
+                
+                #ifftrue.hidden  $$p \leftrightarrow q = \color{blue}{true}$$
+                #ifffalse.hidden  $$p \leftrightarrow q = \color{red}{false}$$
+
+
+      
+      article
+        #intro
+          h1 Trial 6
+          hr
+          h4 This is a time trial. You have 5 minutes to complete all 3 challenges. 
+          hr
+          input(type="button" value="Begin" onclick="begin()")
+            
+        #trial.hidden
+          h1 Challenge 1
+          hr
+          h4  Satisfy the following expression: $$A=(m \lor p) \land \lnot q$$
+          hr
+          article.interaction
+            .item.drag-drop.blue.true m true
+            .item.drag-drop.blue.true p true
+            .item.drag-drop.blue.true q true
+
+            #a.dropzone.a
+              p A
+          hr
+          h1 Challenge 2
+          hr  
+          h4  Satisfy the following expression: $$B= \lnot m \oplus (p \land \lnot q)$$
+          hr
+          article.interaction
+            .item.drag-drop.blue.true m true
+            .item.drag-drop.blue.true p true
+            .item.drag-drop.blue.true q true
+
+            #b.dropzone.a
+              p B
+          hr 
+          h1 Challenge 3
+          hr  
+          h4 Satisfy the following expression: $$C= \lnot (m \leftrightarrow p) \oplus (m \lor \lnot q)$$
+          hr
+          article.interaction
+            .item.drag-drop.blue.true m true
+            .item.drag-drop.blue.true p true
+            .item.drag-drop.blue.true q true
+
+            #c.dropzone.a
+              p C
+          hr
+          input(type="button" value="Submit" onclick="submit()")
+          #timer  
+
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    script(src="js/logic_trial.js")
+
+
+
+
+
+
+        
+  

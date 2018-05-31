@@ -1,0 +1,146 @@
+// compileExpanded: layout_sets.css
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1
+  color: #ccc
+  weight: 300
+
+figure
+  margin: auto
+
+.content
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+img
+  max-width: 100%
+
+.lesson-box
+  position: relative
+  height: 600px
+  background:
+    image: url(../images/math.jpg)
+    size: auto 600px
+    position: top center
+    attachment: fixed
+  overflow: hidden
+
+.title
+  height: 800px
+  width: 100%
+  background:
+    image: url(../images/sets.png)
+    position: center
+    repeat: no-repeat
+    height: 300px
+    width: 100px
+  position: absolute
+  bottom: -25%
+
+
+
+// Interaction ============================================================
+.interaction
+  text-align: center
+  border: 2px #ccc dashed
+  border-radius: 25%
+
+
+.dropzone
+  position: relative
+  top: 30%
+  left: 30%
+
+  background-color: #ccc
+  border: dashed 4px transparent
+  border-radius: 4px
+  padding: 100px
+  width: 10%
+  transition: background-color 0.3s
+  border-radius: 50%
+  text-align: center
+
+
+
+.drop-active
+  border: solid 2px black
+
+.drop-target
+  background-color: lightblue
+  border-color: #595959
+  border-style: dashed
+
+
+.drag-drop
+  float: left
+  position: relative
+  left: 38%
+  bottom: 70px
+  //margin-top: 50px
+
+  max-height: 50px
+  min-height: 50px
+  max-width: 70px
+  //margin: auto
+  z-index: 2
+
+
+  color: #fff
+  //background-color: #29e
+  border: solid 2px   #1a1a1a
+
+  -webkit-transform: translate(0px, 0px)
+  transform: translate(0px, 0px)
+  transition: background-color 0.3s
+
+  border-radius: 25%
+  p
+    margin-top: 22%
+
+
+
+.drag-drop.can-drop
+  color: #000
+  background-color:  #29e
+  border-color: #fff
+
+.red
+  width: 50px
+  height: 50px
+  background-color: red
+
+
+.blue
+  background-color: blue
+  width: 50px
+  height: 50px
+
+.green
+  width: 50px
+  height: 50px
+  background-color: #7ae500
+
+.hidden
+  display: none
+
+#output
+  text-align: center
+  font-size: 40px
+  height: 50px
+
+
+#membership
+  position: relative
+  font-size: 14px
+  top: 50px
+
+
+
+
+
+// Interaction ============================================================

@@ -1,0 +1,631 @@
+//output: shapes.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Your page title here :)
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/products.css")
+  
+  body
+  
+  
+    #red
+      p RED 
+    - var bar = [40,4,16,79.2,76,31.2,4,31.2,64,79.2]
+    #redbox
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+            
+    #reddisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+      
+    #redstar
+      .row.shapes
+        figure.columns.twelve
+          .stars1
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+              
+    #bluebox
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+            
+    #bluedisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+            
+    #bluestar
+      .row.shapes
+        figure.columns.twelve
+          .stars1
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+        
+    #greenbox
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+            
+    #greendisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+            
+    #greenstar
+      .row.shapes
+        figure.columns.twelve
+          .stars1
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+    #redboxdisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+            
+    #redboxstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+    #reddiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")   
+            
+    #blueboxdisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+            
+    #blueboxstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+    #bluediscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")         
+            
+    #greenboxdisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+                    
+    #greenboxstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+    #greendiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")     
+                
+    #redboxdiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+    #blueboxdiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+            
+    #greenboxdiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+        .stars1
+          svg(height="105" width="250")
+            polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")        
+          
+    #redbluebox
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+            
+    #redbluedisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+          
+    #redbluestar
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+      
+    #redgreenbox
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+
+    #redgreendisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+
+    #redgreenstar
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+    #bluegreenbox
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+
+    #bluegreendisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+
+    #bluegreenstar
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+              
+    #redblueboxdisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+
+    #redblueboxstar
+      .shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+    #redbluediscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+    
+    #redgreenboxdisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+
+    #redgreenboxstar
+      .shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+    #redgreendiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+
+    #bluegreenboxdisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+
+    #bluegreenboxstar
+      .shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+    #bluegreendiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+
+    #redblueboxdiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+
+    #redgreenboxdiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+              
+    #bluegreenboxdiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+          svg(width="73" height="73")
+            circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars2
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+              
+    #redbluegreenbox
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+            
+            
+    #redbluegreendisc
+      .row.shapes
+        figure.columns.twelve
+          figure.columns.twelve
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+              
+    #redbluegreenstar
+      .row.shapes
+        figure.columns.twelve
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+    #redbluegreenboxdisc
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+        .row.shapes
+          figure.columns.twelve
+            figure.columns.twelve
+              svg(width="73" height="73")
+                circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+              svg(width="73" height="73")
+                circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+              svg(width="73" height="73")
+                circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+
+    #redbluegreenboxstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+              
+    
+    #redbluegreendiscstar
+      .row.shapes
+        figure.columns.twelve
+          figure.columns.twelve
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+              
+    
+    #redbluegreenboxdiscstar
+      .row.shapes
+        figure.columns.twelve
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:red;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:blue;stroke:black;stroke-width:2")
+          svg(width="73" height="73")
+            rect(x="6" y="2" rx="10" ry="10" width="60" height="60" style="fill:green;stroke:black;stroke-width:2")
+      .row.shapes
+        figure.columns.twelve
+          figure.columns.twelve
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="red")
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="blue")
+            svg(width="73" height="73")
+              circle(cx="35" cy="36" r="32" stroke="black" stroke-width="2" fill="green")
+      .row.shapes
+        figure.columns.twelve
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:red;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:blue;stroke:black;stroke-width:2;fill-rule:nonzero;")
+          .stars3
+            svg(height="105" width="250")
+              polygon(points=bar style="fill:green;stroke:black;stroke-width:2;fill-rule:nonzero;")
+
+
+  footer

@@ -1,0 +1,197 @@
+// compileExpanded: layout_products_trial.css
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1
+  color: #ccc
+  weight: 300
+
+figure
+  margin: auto
+
+.content
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+img
+  max-width: 100%
+
+.lesson-box
+  position: relative
+  height: 600px
+  background:
+    image: url(../images/math.jpg)
+    size: auto 600px
+    position: top center
+    attachment: fixed
+  overflow: hidden
+
+.title
+  height: 100px
+  width: 100%
+  background:
+    image: url(../images/products.png)
+    position: center
+    repeat: no-repeat
+  position: absolute
+  top: 50%
+  margin-top: -50px
+
+// Interaction ============================================================
+.interaction
+  text-align: center
+  border: 2px #ccc dashed
+  border-radius: 25%
+  height: 400px
+
+.dropzone
+  position: relative
+  top: 150px
+  //background-color: #ccc
+  border: dashed 4px transparent
+  border-radius: 4px
+  padding: 100px
+  width: 15%
+  transition: background-color 0.3s
+  border-radius: 50%
+  text-align: center
+  height: 40px
+
+#a
+  top: 180px
+  width: 10%
+  left: 30%
+  position: relative
+  background-color: #ccc
+
+#a.drop-target
+  background-color: #f2f2f2
+  border-color: #595959
+  border-style: dashed
+
+
+#b
+  top: 180px
+  width: 10%
+  left: 30%
+  position: relative
+  background-color: #ccc
+
+#b.drop-target
+  background-color: #f2f2f2
+  border-color: #595959
+  border-style: dashed
+
+
+#c
+  top: 180px
+  width: 10%
+  left: 30%
+  position: relative
+  background-color: #ccc
+
+#c.drop-target
+  background-color: #f2f2f2
+  border-color: #595959
+  border-style: dashed
+
+
+.drag-drop
+  position: relative
+
+  max-height: 50px
+  min-height: 50px
+  max-width: 70px
+  //margin: auto
+  z-index: 2
+
+
+  color: #fff
+  //
+  //background-color: #29e
+  border-style: hidden
+
+  -webkit-transform: translate(0px, 0px)
+  transform: translate(0px, 0px)
+  transition: background-color 0.3s
+
+  border-radius: 50%
+  p
+    margin-top: 22%
+
+
+.drag-drop.can-drop
+  color: #000
+  //sbackground-color:  #29e
+  border-color: #fff
+
+.disc
+  margin-left: 1%
+
+.top
+  position: relative
+  left: 37.5%
+  top: -30px
+  z-index: 2
+  float: left
+
+.mid
+  position: relative
+  top: 30px
+  left: 9.8%
+  z-index: 2
+  float: left
+
+  //background-color: blue
+
+.bottom
+  position: relative
+  top: 90px
+  left: -18%
+  z-index: 2
+  float: left
+
+  //background-color: blue
+
+.hidden
+  display: none
+
+.output
+  top: -22%
+  position: relative
+  border-radius: 50%
+  width: 100%
+  text-align: center
+  font-size: 16px
+  border: 4px  #595959 dashed
+
+.red
+  background:
+    color: red
+.blue
+  background:
+    color: blue
+.green
+  background:
+    color: green
+
+#timer
+  position: fixed
+  top: 500px
+  font-size: 40px
+  z-index: -1
+  left: 85%
+
+.critical
+  color: red
+
+#pickups
+  border: 1px dashed #ccc
+  height: 400px
+  width: 80%
+
+// Interaction ============================================================

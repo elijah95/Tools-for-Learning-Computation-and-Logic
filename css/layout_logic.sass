@@ -1,0 +1,330 @@
+// compileExpanded: layout_logic.css
+
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1
+  color: #ccc
+  weight: 300
+
+figure
+  margin: auto
+
+.content
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+img
+  max-width: 100%
+
+.lesson-box
+  position: relative
+  height: 600px
+  background:
+    image: url(../images/math.jpg)
+    size: auto 600px
+    position: top center
+    attachment: fixed
+  overflow: hidden
+
+.title
+  height: 100px
+  width: 100%
+  background:
+    //image: url(../images/black-bird-logo.svg)
+    image: url(../images/logic.png)
+    position: center
+    repeat: no-repeat
+  position: absolute
+  top: 50%
+  margin-top: -50px
+
+
+
+
+// Interaction ============================================================
+.interaction
+  //text-align: center
+  border: 2px #ccc dashed
+  border-radius: 23%
+  width: 100%
+  height: 450px
+
+
+
+
+.dropzone
+  position: relative
+  top: 50px
+  border: dashed 4px transparent
+  width: 42.25%
+  padding: 50%
+  height: 50px
+  border-radius: 50%
+
+.and
+  position: relative
+  left: 78%
+  transition: background-color 0.6s
+  background:
+    color:  #b3d1ff
+  opacity: 0.9
+
+
+.drop-targetand
+  background-color: #3399ff
+  border-color: #595959
+  border-style: dashed
+  opacity: 1.0
+  transition: background-color 0.6s
+
+.output
+  position: relative
+  top: 100px
+  padding: 10px
+
+  border-radius: 25%
+  text-align: center
+  border: 2px dashed black
+
+
+.output_and
+  left: 110%
+  height: 23%
+  width: 100%
+
+  transition: background-color 0.6s
+  background:
+    color:  #b3d1ff
+  opacity: 0.9
+
+
+.or
+  position: relative
+  left: 78%
+  transition: background-color 0.6s
+  background:
+    color:  #ffc966
+  opacity: 0.9
+
+
+.drop-targetor
+  background-color: #ffb833
+  border-color: #595959
+  border-style: dashed
+  opacity: 1
+  transition: background-color 0.6s
+
+.output_or
+  left: 110%
+  height: 23%
+  width: 100%
+
+  transition: background-color 0.6s
+  background:
+    color: #ffb833
+  opacity: 0.9
+  height: 27%
+
+.not
+  position: relative
+  left: 78%
+  transition: background-color 0.6s
+  background:
+    color: #ff6666
+  opacity: 0.9
+
+.drop-targetnot
+  background-color: #ff3333
+  border-color: #595959
+  border-style: dashed
+  opacity: 1
+  transition: background-color 0.6s
+
+
+.output_not
+  left: 110%
+  height: 23%
+  width: 100%
+
+  transition: background-color 0.6s
+  background:
+    color: #ff6666
+  opacity: 0.9
+  height: 27%
+
+#xor
+  position: relative
+  left: 75%
+
+  transition: background-color 0.6s
+  background:
+    color: #e6b3e6
+  opacity: 0.9
+  p
+    position: relative
+    top: -5px
+
+#xor.drop-active
+  border: solid 2px black
+
+#xor.drop-target
+  background-color: #cc66cc
+  border-color: #595959
+  border-style: dashed
+  opacity: 1
+  transition: background-color 0.6s
+
+#output_xor
+  left: 140%
+  height: 23%
+  width: 150%
+
+  transition: background-color 0.6s
+  background:
+    color: #e6b3e6
+  opacity: 0.9
+
+
+#iff
+  left: 75%
+  transition: background-color 0.6s
+  background:
+    color: #ffe680
+  opacity: 0.9
+
+#iff.drop-active
+  border: solid 2px black
+
+#iff.drop-target
+  background-color: #ffd633
+  border-color: #595959
+  border-style: dashed
+  opacity: 1.0
+  transition: background-color 0.6s
+
+
+#output_iff
+  left: 140%
+  height: 23%
+  width: 150%
+
+  transition: background-color 0.6s
+  background:
+    color:  #ffe680
+  opacity: 0.9
+
+
+#demorgan
+  position: relative
+  left: 45%
+
+  transition: background-color 0.6s
+  background:
+    color: #ffc299
+  opacity: 0.9
+  p
+    position: relative
+    top: -5px
+    left: -11.5px
+
+#demorgan.drop-active
+  border: solid 2px black
+
+#demorgan.drop-target
+  background-color: #ff8533
+  border-color: #595959
+  border-style: dashed
+  opacity: 1
+
+#output_demorgan
+  position: relative
+  left: 126%
+  background:
+    color:  #ffc299
+  opacity: 0.9
+  width: 250px
+  padding: 20px
+
+
+.drag-drop
+  float: left
+  position: relative
+  left: 42%
+  top: -10%
+
+
+  max-height: 50px
+  min-height: 50px
+  max-width: 50px
+  min-width: 50px
+  //margin: auto
+  z-index: 2
+
+
+  //color: #fff
+  //background-color: blue
+  border: solid 2px   #1a1a1a
+
+  -webkit-transform: translate(0px, 0px)
+  transform: translate(0px, 0px)
+  transition: background-color 0.3s
+
+  border-radius: 25%
+
+  //font-size: 17px
+  text-align: center
+
+
+.switch-false
+  background-color: red
+  transition: background-color 0.3s
+
+.blue
+  background:
+    color: blue
+  transition: background-color 0.3s
+  font-size: 17px
+  color: #fff
+
+.red
+  background:
+    color: red
+  transition: background-color 0.3s
+  font-size: 17px
+  color: #fff
+
+
+
+.drag-drop.can-drop
+  color: #000
+  background-color:  #29e
+  border-color: #fff
+
+
+.hidden
+  display: none
+
+
+.yellow
+  background:
+    color: #ffcc00
+  color: black
+  transition: background-color 0.3s
+  font-size: 17px
+
+
+.orange
+  background:
+    color: orange
+  color: black
+    transition: background-color 0.3s
+    font-size: 17px
+
+.dem
+  position: relative
+  left: 39.5%

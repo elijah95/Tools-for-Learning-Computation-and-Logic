@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BUILDERS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/builders_trial.css">
+  </head>
+  <body>
+    <header class="lesson-box">
+      <div class="title"></div>
+      <div class="fgr"></div>
+    </header>
+    <section class="content">
+      <div id="emptyset" class="hidden">$$\emptyset$$</div>
+      <div id="1to3" class="hidden">$$\{x \mid  1 \leq x \leq 3\}$$</div>
+      <div id="1to2" class="hidden">$$\{x \mid  1 \leq x \leq 2\}$$</div>
+      <div id="2to3" class="hidden">$$\{x \mid  2 \leq x \leq 3\}$$</div>
+      <div id="red" class="hidden">$$\{x \mid  Red(x)\}$$</div>
+      <div id="blue" class="hidden">$$\{x \mid  Blue(x)\}$$</div>
+      <div id="odd" class="hidden">$$\{x \mid   Odd(x)\}$$</div>
+      <div id="oddr" class="hidden">$$\{x \mid  Odd(x) \land Red(x)\}$$</div>
+      <div id="oddb" class="hidden">$$\{x \mid  Odd(x)\land Blue(x) \}$$</div>
+      <div id="even" class="hidden">$$\{x \mid   Even(x)\}$$</div>
+      <div id="evenr" class="hidden">$$\{x \mid  Even(x) \land Red(x)\}$$</div>
+      <div id="evenb" class="hidden">$$\{x \mid  Even(x) \land Blue(x) \}$$</div>
+      <audio id="bassa" src="audio/mombassa.mp3"></audio>
+      <article>
+        <div id="intro">
+          <h1>Trial 4</h1>
+          <hr>
+          <h4>This is a time trial. You have 5 minutes to complete all 3 challenges. </h4>
+          <hr>
+          <input type="button" value="Begin" onclick="begin()">
+        </div>
+        <div id="trial" class="hidden">
+          <h1>Challenge 1</h1>
+          <hr>
+          <h4>Form the following comprehension: $\tiny \{x \mid  Even(x) \land Red(x)\}$</h4>
+          <hr>
+          <article class="interaction">
+            <div id="item" class="drag-drop red top"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop red top"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop red top"> 
+              <p>3</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>3</p>
+            </div>
+            <div id="comprA" class="dropzone">
+              <p>A</p>
+            </div>
+          </article>
+          <h1>Challenge 2</h1>
+          <hr>
+          <h4>Form the following comprehension: $\tiny \{x \mid  Odd(x)\land Blue(x) \}$</h4>
+          <hr>
+          <article class="interaction">
+            <div id="item" class="drag-drop red top"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop red top"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop red top"> 
+              <p>3</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>3</p>
+            </div>
+            <div id="comprB" class="dropzone">
+              <p>B</p>
+            </div>
+          </article>
+          <h1>Challenge 3</h1>
+          <hr>
+          <h4>Form the following comprehension: $\tiny \{x \mid  1 \leq x \leq 3\}$</h4>
+          <hr>
+          <article class="interaction">
+            <div id="item" class="drag-drop red top"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop red top"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop red top"> 
+              <p>3</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>1</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>2</p>
+            </div>
+            <div id="item" class="drag-drop blue bottom"> 
+              <p>3</p>
+            </div>
+            <div id="comprC" class="dropzone">
+              <p>C</p>
+            </div>
+          </article>
+          <hr>
+          <input type="button" value="Submit" onclick="submit()">
+          <div id="timer">       </div>
+        </div>
+      </article>
+    </section>
+  </body>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});</script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/builders_trial.js"></script>
+  </footer>
+</html>

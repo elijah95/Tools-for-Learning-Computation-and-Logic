@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SETS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/sets.css">
+  </head>
+  <body>
+    <header class="lesson-box">
+      <div class="title"></div>
+    </header>
+    <section class="content">
+      <article>
+        <h1>Basic Definitions</h1>
+        <hr>
+        <p>In mathematics, the term "set" is not defined explicitly. Rather, like terms such as "point" and "line" in geometry, the term set is defined by its properties. Specifically,there is a notion of membership that makes sense only for sets. When $S$ is a set and $x$ is anything, we can ask the question, "Is $x$ a member of set $S$?"  The set $S$ then consists of all those elements $x$ for which $x$ is a member of $S$. The following points summarize some important notations for talking about sets.</p>
+        <ol>
+          <li>The expression $x \in S$ means that the element $x$ is a member of the set $S$.</li>
+          <li>If  $x_1, x_2, \dots, x_n$ are all the members of set $S$, then we can write $S={x_1, x_2, \dots, x_n}.$</li>
+          <li>The empty set, denoted $\emptyset$, is the set that has no members. That is, $x \in \emptyset$ is false, no matter what $x$ is.</li>
+        </ol>
+        <hr>
+        <article class="interaction">
+          <div id="emptyset" class="hidden">$$\emptyset$$</div>
+          <div id="subs" class="hidden"> </div>
+          <div id="membs" class="hidden"> </div>
+          <div id="compls" class="hidden"> </div>
+          <div id="red" class="hidden"> $$\{ Red \}$$</div>
+          <div id="blue" class="hidden"> $$\{ Blue \}$$</div>
+          <div id="green" class="hidden"> $$\{ Green \}$$</div>
+          <div id="redblue" class="hidden"> $$\{ Red, Blue \}$$</div>
+          <div id="redgreen" class="hidden"> $$\{ Red, Green \}$$</div>
+          <div id="bluegreen" class="hidden"> $$\{ Blue, Green \}$$</div>
+          <div id="redina" class="hidden">$$ Red \in A $$</div>
+          <div id="blueina" class="hidden">$$ Blue \in A $$</div>
+          <div id="greenina" class="hidden">$$ Green \in A $$</div>
+          <div id="rednotina" class="hidden">$$ Red \notin A$$</div>
+          <div id="bluenotina" class="hidden">$$ Blue \notin A$$</div>
+          <div id="greennotina" class="hidden">$$ Green \notin A$$</div>
+          <div id="redbluegreen" class="hidden"> $$\{ Red, Blue, Green \}$$</div>
+          <div id="item" class="drag-drop red"> 
+            <p>Red</p>
+          </div>
+          <div id="item" class="drag-drop blue"> 
+            <p>Blue</p>
+          </div>
+          <div id="item" class="drag-drop green"> 
+            <p>Green</p>
+          </div>
+          <div id="set" class="dropzone">
+            <p>A</p>
+          </div>
+          <div id="output"></div>
+          <div id="membership"> </div>
+        </article>
+        <hr>
+        <input type="button" value="Main" onclick="location.href='landing.html'">
+      </article>
+    </section>
+  </body>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});</script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/sets2.js"></script>
+  </footer>
+</html>

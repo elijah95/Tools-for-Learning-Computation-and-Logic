@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BUILDERS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/builders.css">
+  </head>
+  <body>
+    <header class="lesson-box">
+      <div class="title"></div>
+      <div class="fgr"></div>
+    </header>
+    <section class="content">
+      <article>
+        <h1>Multiset</h1>
+        <hr>
+        <p> </p>Sometimes we speak of a multiset or a comprehension, which is a set whose elements are allowed to have a multiplicity 
+        greater than 1. The expression $\{x \mid x \in S \land P(x)\}$ is interpreted as:  
+        "the set of elements $x$ in $S$ such that $x$ has property $P$." and is formally refered 
+        to as a $\it set$ $\it former$.  
+        <hr>
+        <article class="interaction">
+          <div id="item" class="drag-drop red top"> 
+            <p>1</p>
+          </div>
+          <div id="item" class="drag-drop red top"> 
+            <p>2</p>
+          </div>
+          <div id="item" class="drag-drop red top"> 
+            <p>3</p>
+          </div>
+          <div id="item" class="drag-drop blue bottom"> 
+            <p>1</p>
+          </div>
+          <div id="item" class="drag-drop blue bottom"> 
+            <p>2</p>
+          </div>
+          <div id="item" class="drag-drop blue bottom"> 
+            <p>3</p>
+          </div>
+          <div id="compr" class="dropzone">
+            <p>A</p>
+          </div>
+          <div id="emptyset" class="hidden">$$\emptyset$$</div>
+          <div id="1to3" class="hidden">$$\{x \mid  1 \leq x \leq 3\}$$</div>
+          <div id="1to2" class="hidden">$$\{x \mid  1 \leq x \leq 2\}$$</div>
+          <div id="2to3" class="hidden">$$\{x \mid  2 \leq x \leq 3\}$$</div>
+          <div id="red" class="hidden">$$\{x \mid  Red(x)\}$$</div>
+          <div id="blue" class="hidden">$$\{x \mid  Blue(x)\}$$</div>
+          <div id="odd" class="hidden">$$\{x \mid   Odd(x)\}$$</div>
+          <div id="oddr" class="hidden">$$\{x \mid  Odd(x) \land Red(x)\}$$</div>
+          <div id="oddb" class="hidden">$$\{x \mid  Odd(x)\land Blue(x) \}$$</div>
+          <div id="even" class="hidden">$$\{x \mid   Even(x)\}$$</div>
+          <div id="evenr" class="hidden">$$\{x \mid  Even(x) \land Red(x)\}$$</div>
+          <div id="evenb" class="hidden">$$\{x \mid  Even(x) \land Blue(x) \}$$</div>
+        </article>
+        <div id="output"></div>
+        <hr>
+        <input type="button" value="Main" onclick="location.href='landing.html'">
+      </article>
+    </section>
+  </body>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});</script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/builders2.js"></script>
+  </footer>
+</html>

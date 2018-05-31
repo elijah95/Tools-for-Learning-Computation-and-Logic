@@ -1,0 +1,117 @@
+//output: subsets.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title SUBSETS
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/subsets.css")
+    
+  body
+
+    header.lesson-box
+       .title
+       
+    section.content
+      
+      article
+        
+        h1 The Subset Relationship
+        
+        hr
+        p There is a family of comparison operators among sets that is analogous to the comparisons among numbers. If $S$ and $T$ are sets, we say that $S \subset T$ if every member of $S$ is also a member of $T$. We can express this in words several ways: "$S$ is a subset of $T$", "$T$ is a superset of $S$", "$S$ is contained in $T$", or "$T$ contains $S$". We say that $S \subset T$, if $S \subseteq T$, and there is at least one element of $T$ that is not also a member of $S$. The $S \subset T$ relationship can be read "$S$ is a proper subset of $T$", "$T$ is a proper superset of $S$", "$S$ is properly contained in $T$", or "$T$ properly contains $S$". As with "less than", we can reverse the direction of the comparison; $S \supset T$ is synonymous with $T \subset S$, and $S \supseteq T$ is synonymous with $T \subseteq S$.
+ 
+        hr
+        article.interaction
+          #emptyset.hidden $$\emptyset$$
+          #subs.hidden 
+          #membs.hidden 
+          #compls.hidden 
+          
+          #red.hidden  $$\{ Red \}$$
+          #blue.hidden  $$\{ Blue \}$$
+          #green.hidden  $$\{ Green \}$$
+          
+          #redblue.hidden  $$\{ Red, Blue \}$$
+          #redgreen.hidden  $$\{ Red, Green \}$$
+          #bluegreen.hidden  $$\{ Blue, Green \}$$
+          
+          #redbluegreen.hidden  $$\{ Red, Blue, Green \}$$
+
+          
+          #redina.hidden $$ Red \in A $$
+          #blueina.hidden $$ Blue \in A $$
+          #greenina.hidden $$ Green \in A $$
+          
+          #rednotina.hidden $$ Red \notin A$$
+          #bluenotina.hidden $$ Blue \notin A$$
+          #greennotina.hidden $$ Green \notin A$$
+          
+          
+          #redinb.hidden $$ Red \in B $$
+          #blueinb.hidden $$ Blue \in B $$
+          #greeninb.hidden $$ Green \in B $$
+          
+          #rednotinb.hidden $$ Red \notin B$$
+          #bluenotinb.hidden $$ Blue \notin B$$
+          #greennotinb.hidden $$ Green \notin B$$
+          
+          
+          
+          
+          #item.draggable.drag-drop.red 
+            p Red
+
+          #item.draggable.drag-drop.blue 
+            p Blue
+          
+          #item.draggable.drag-drop.green 
+            p Green
+        
+          .dz
+            #set.dropzone
+              p A
+            #subset.dropzone
+              p B
+              
+        
+          .row.out
+            figure.columns.six#a             
+              #outputA
+              #membershipA 
+            
+            figure.columns.six#b            
+              #outputB
+              #membershipB 
+        
+          
+          #emptyset.hidden $$\emptyset$$
+          #subs.hidden 
+          
+          #membsA.hidden 
+          #complsA.hidden 
+          
+          #membsB.hidden 
+          #complsB.hidden 
+        
+        hr 
+        input(type="button" value="Main" onclick="location.href='landing.html'")
+
+                  
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    
+    script(src="js/subsets2.js")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+
+
+
+
+        
+  

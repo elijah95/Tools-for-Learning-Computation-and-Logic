@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/logic.css">
+  </head>
+  <body>
+    <header class="lesson-box">
+      <div class="title"></div>
+      <div class="fgr"></div>
+    </header>
+    <section class="content">
+      <div id="p" class="hidden">p</div>
+      <div id="notp" class="hidden">$\color{red}\lnot$p</div>
+      <div id="notpclear" class="hidden">$\lnot$p</div>
+      <div id="q" class="hidden">q</div>
+      <div id="notq" class="hidden">$\color{red}\lnot$q</div>
+      <div id="notqclear" class="hidden">$\lnot$q</div>
+      <div id="and" class="hidden">$\land$</div>
+      <div id="or" class="hidden">$\lor$</div>
+      <div id="not" class="hidden">$\lnot$</div>
+      <div id="ptrue" class="hidden"> $$p = \color{blue}{true}$$</div>
+      <div id="pfalse" class="hidden"> $$p = \color{red}{false}$$</div>
+      <div id="qtrue" class="hidden"> $$q = \color{blue}{true}$$</div>
+      <div id="qfalse" class="hidden"> $$q = \color{red}{false}$$</div>
+      <div id="notptrue" class="hidden"> $$\lnot p = \color{blue}{true}$$</div>
+      <div id="notpfalse" class="hidden"> $$\lnot p = \color{red}{false}$$</div>
+      <div id="notqtrue" class="hidden"> $$\lnot q = \color{blue}{true}$$</div>
+      <div id="notqfalse" class="hidden"> $$\lnot q = \color{red}{false}$$</div>
+      <div id="andtrue" class="hidden"> $$p \land q =  \color{blue}{true}$$</div>
+      <div id="andfalse" class="hidden"> $$p \land q = \color{red}{false}$$</div>
+      <div id="ortrue" class="hidden"> $$p \lor q =  \color{blue}{true}$$</div>
+      <div id="orfalse" class="hidden"> $$p \lor q = \color{red}{false}$$</div>
+      <div id="demPandQ" class="hidden">$\not p \lor \not q$</div>
+      <div id="demNandQ" class="hidden">$ p \lor \not q$</div>
+      <div id="demPandN" class="hidden">$\not p \lor q$</div>
+      <div id="demNandN" class="hidden">$ p \lor q$</div>
+      <div id="demPorQ" class="hidden">$\not p \land \not q$</div>
+      <div id="demNorQ" class="hidden">$ p \land \not q$</div>
+      <div id="demPorN" class="hidden">$\not p \land q$</div>
+      <div id="demNorN" class="hidden">$ p \land q$</div>
+      <div id="xortrue" class="hidden"> $$p \oplus q = \color{blue}{true}$$</div>
+      <div id="xorfalse" class="hidden"> $$p \oplus q = \color{red}{false}$$</div>
+      <div id="ifftrue" class="hidden"> $$p \leftrightarrow q = \color{blue}{true}$$</div>
+      <div id="ifffalse" class="hidden"> $$p \leftrightarrow q = \color{red}{false}$$</div>
+      <article>
+        <h1>Logic</h1>
+        <hr>
+        <p>
+          Logical expressions can contain logical operators such as: AND $(\land)$, OR $(\lor)$, and NOT $(\lnot)$. 
+          When the values of the operands of the logical operators in a logical expression are known, the value of the
+          expression can be determined using rules such as:
+        </p>
+        <ol>
+          <li> The expression $p\land q$ is true only when both $p$ and $q$ are true; it is false otherwise.</li>
+          <li> The expression $p\lor q$ is true if either $p$ or $q$, or both are true; it is false otherwise.</li>
+          <li> The expression $\lnot p$ is true if $p$ is false, and false if $p$ is true.</li>
+        </ol>
+        <h6>
+          NOTE: To change the logical operator of the drop zone or the truth value of a literal,
+          simply double click on the object.
+        </h6>
+        <hr>
+        <article class="interaction">
+          <div class="item drag-drop blue true">p true</div>
+          <div class="item drag-drop blue true">q true</div>
+          <div class="row img-row">
+            <figure class="columns three">
+              <div id="tri" class="dropzone and">$\land$</div>
+            </figure>
+          </div>
+          <div class="row img-row">
+            <figure class="columns four">
+              <h5 id="output_tri" class="output output_and hidden"></h5>
+            </figure>
+          </div>
+        </article>
+        <hr>
+        <h4>DeMorgan’s Laws</h4>
+        <p>
+           
+          There are two laws that allow us to push NOTs through an expression of ANDs and ORs, resulting in an
+          expression in which all the negations apply to propositional variables:
+        </p>
+        <ol> 
+          <li>$\lnot (p \land q) \equiv \lnot p \lor \lnot q$</li>
+          <li>$\lnot (p \lor q) \equiv \lnot p \land \lnot q$</li>
+        </ol>
+        <hr>
+        <article class="interaction">
+          <div id="demorganP" class="lit item drag-drop blue dem">p </div>
+          <div id="op" class="item drag-drop yellow and dem"> </div>
+          <div id="demorganQ" class="lit item drag-drop blue dem">q </div>
+          <div class="row img-row">
+            <figure class="columns three">
+              <div id="demorgan" class="dropzone"> 
+                <p>$$demorgan$$</p>
+              </div>
+            </figure>
+          </div>
+          <div class="row img-row">
+            <figure class="columns three">
+              <h5 id="output_demorgan" class="output hidden"></h5>
+            </figure>
+          </div>
+        </article>
+        <hr>
+        <h4>Exclusive OR </h4>
+        <p>
+           
+          It gains the name "exclusive or" because the meaning of "or" is ambiguous when both operands are true; 
+          the exclusive or operator excludes that case. This is sometimes thought of as "one or the other but not both". 
+          This could be written as "A or B, but not, A and B". <br><br>The XOR ($\oplus$) logical operator outputs true whenever either p or q is true, but not both; it is false 
+          otherwise.
+        </p>
+        <hr>
+        <article class="interaction">
+          <div class="item drag-drop blue true">p true</div>
+          <div class="item drag-drop blue true">q true</div>
+          <div class="row img-row">
+            <figure class="columns three">
+              <div id="xor" class="dropzone"> 
+                <p>$$\oplus$$</p>
+              </div>
+            </figure>
+          </div>
+          <div class="row img-row">
+            <figure class="columns three">
+              <h5 id="output_xor" class="output hidden"></h5>
+            </figure>
+          </div>
+        </article>
+        <hr>
+        <h4>Logical equality</h4>
+        <p>
+           
+          Logical equality is a logical operator that corresponds to equality in Boolean algebra 
+          It gives the functional value true if both functional arguments have the same logical value, 
+          and false if they are different.          
+          It is also logically equivalent to $(p \land q) \lor (\lnot p \land \lnot q)$  ot the XNOR (exclusive not or) 
+          boolean operator, meaning "both or neither". <br><br>The logical equality ($\leftrightarrow$) logical operator outputs true whenever both p and q are true or both are false; it is false 
+          otherwise.
+        </p>
+        <hr>
+        <article class="interaction">
+          <div class="item drag-drop blue true">p true</div>
+          <div class="item drag-drop blue true">q true</div>
+          <div class="row img-row">
+            <figure class="columns three">
+              <div id="iff" class="dropzone"> 
+                <p>$$\leftrightarrow$$</p>
+              </div>
+            </figure>
+          </div>
+          <div class="row img-row">
+            <figure class="columns three">
+              <h5 id="output_iff" class="output hidden"></h5>
+            </figure>
+          </div>
+        </article>
+        <hr>
+        <input type="button" value="Main" onclick="location.href='landing.html'">
+      </article>
+    </section>
+  </body>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});</script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/logic_tri.js"></script>
+    <script src="js/logic_demorgan.js"></script>
+    <script src="js/logic_xor.js"></script>
+    <script src="js/logic_iff.js"></script>
+  </footer>
+</html>

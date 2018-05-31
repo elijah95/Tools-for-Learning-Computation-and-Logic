@@ -1,0 +1,202 @@
+// compileExpanded: layout_subsets_trial.css
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1
+  color: #ccc
+  weight: 300
+
+figure
+  margin: auto
+
+.content
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+img
+  max-width: 100%
+
+.lesson-box
+  position: relative
+  height: 600px
+  background:
+    image: url(../images/math.jpg)
+    color: black
+    size: auto 600px
+    position: top center
+    attachment: fixed
+  overflow: hidden
+
+.title
+  height: 100px
+  width: 100%
+  background:
+    image: url(../images/subsets.png)
+    position: center
+    repeat: no-repeat
+  position: absolute
+  top: 50%
+  margin-top: -50px
+
+
+
+// Interaction ============================================================
+.interaction
+  height: 310px
+  text-align: center
+  border: 2px #ccc dashed
+  border-radius: 25%
+  padding: 0px
+  margin-bottom: 100%
+
+
+.dz
+  //border: 1px solid black
+  width: auto
+  height: 260px
+  padding: 0
+  text-align: center
+
+
+.set
+  position: relative
+  top: 30%
+  left: 30%
+
+  background-color: #b1dae7
+  border: dashed 4px transparent
+  border-radius: 4px
+  padding: 100px
+  width: 10%
+  transition: background-color 0.3s
+  border-radius: 50%
+  text-align: center
+  p
+    position: relative
+    top: 112px
+
+.subset
+  position: relative
+  top: -50%
+  left: 38%
+
+  background-color: #ffc966
+  border: dashed 4px transparent
+  border-radius: 4px
+  padding: 50px
+  width: 10%
+  transition: background-color 0.3s
+  border-radius: 50%
+  text-align: center
+  p
+    position: relative
+    top: 8px
+
+.drop-active
+  border: solid 2px black
+
+.set.light-up
+  background-color: #66a3ff
+  border-color: #595959
+  border-style: dashed
+  opacity: 1
+
+
+.subset.light-up
+  background-color: orange
+  border-color: #595959
+  border-style: dashed
+  opacity: 1
+
+
+.drag-drop
+  float: left
+  position: relative
+  left: 38%
+  bottom: 70px
+  //margin-top: 50px
+
+  max-height: 50px
+  min-height: 50px
+  max-width: 70px
+  //margin: auto
+  z-index: 2
+
+
+  color: #fff
+  //background-color: #29e
+  border: solid 2px   #1a1a1a
+
+  -webkit-transform: translate(0px, 0px)
+  transform: translate(0px, 0px)
+  transition: background-color 0.3s
+
+  border-radius: 25%
+  p
+    margin-top: 22%
+
+
+.drag-drop.can-drop
+  color: #000
+  background-color:  #29e
+  border-color: #fff
+
+.red
+  width: 50px
+  height: 50px
+  background-color: red
+
+
+.blue
+  background-color: blue
+  width: 50px
+  height: 50px
+
+.green
+  width: 50px
+  height: 50px
+  background-color: #7ae500
+
+.hidden
+  display: none
+
+
+.out
+  //border: 1px solid black
+  position: relative
+  top: 55px
+  left: 23%
+  width: 355px
+
+.top
+  left: 38%
+  bottom: 60px
+  float: left
+
+  width: 50px
+  height: 50px
+
+.bottom
+  left: 12.5%
+  bottom: 5px
+  float: left
+
+  width: 50px
+  height: 50px
+
+
+#timer
+  position: fixed
+  top: 500px
+  font-size: 40px
+  z-index: -1
+  left: 85%
+
+.critical
+  color: red
+
+// Interaction ============================================================

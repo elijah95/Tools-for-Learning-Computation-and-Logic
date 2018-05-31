@@ -1,0 +1,83 @@
+//output: landing.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title MAIN
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/landing.css")
+    
+  body
+
+    header.traffic-box
+       .logo
+       .traffic
+       
+    section#main.content
+      article
+        h1 Welcome
+        #mySidenav.sidenav
+          a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+          h2#navTitle
+          a(href='#')#lesson LESSON
+          a(href='#')#trial TRIAL
+        
+        //-
+          #main
+            h2 Sidenav Push Example
+              p
+                | Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.
+              span(style='font-size:30px;cursor:pointer', onclick='openNav("SETS","sets.html","sets_trial.html")' ) ☰ open
+                img(src="images/sets.png")
+
+        //p Class is in session! 
+        hr
+        .lessons
+          .row.img-row
+            figure.columns.four
+              span(style='cursor:pointer', onclick='openNav("SETS","sets.html","sets_trial.html")' )
+                img(src="images/sets.png")
+                figcaption CHAPTER 1 - <strong>SETS</strong> 
+            
+            figure.columns.four
+              span(style='cursor:pointer', onclick='openNav("SUBSETS", "subsets.html","subsets_trial.html")' )
+                img(src="images/subsets.png")
+                figcaption CHAPTER 2 - <strong>SUBSETS</strong> 
+            
+            figure.columns.four
+              span(style='cursor:pointer', onclick='openNav("SET OPS", "setops.html","setops_trial.html")' )
+                img(src="images/setops.png")
+                figcaption CHAPTER 3 - <strong>SET OPS</strong> 
+                  
+          .row.img-row
+            figure.columns.four
+              span(style='cursor:pointer', onclick='openNav("SET BUILDERS","builders.html","builders_trial.html")' )
+                img(src="images/builders.png")
+                figcaption CHAPTER 4 - <strong>SET BUILDERS</strong> 
+            
+            figure.columns.four
+              span(style='cursor:pointer', onclick='openNav("PRODUCTS", "products.html","products_trial.html")' )
+                img(src="images/products.png")
+                figcaption CHAPTER 5 - <strong>PRODUCTS</strong> 
+            
+            figure.columns.four
+              span(style='cursor:pointer', onclick='openNav("LOGIC", "logic.html","logic_trial.html")' )
+                img(src="images/logic.png")
+                figcaption CHAPTER 6 - <strong>LOGIC</strong> 
+                
+            
+        hr      
+
+
+  footer#ft
+    .row.footer-stuff
+        strong FIND ME AT:
+        ul
+          li: a(href="mailto:s1450390@ed.ac.uk") s1450390@ed.ac.uk
+  
+        script(src="js/functions.js")
+        
+  
+      

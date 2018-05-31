@@ -1,0 +1,199 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #ccc;
+  weight: 300;
+}
+
+figure {
+  margin: auto;
+}
+
+.content article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lesson-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../images/math.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.title {
+  height: 100px;
+  width: 100%;
+  background-image: url(../images/setops.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.fgr {
+  width: 500px;
+  height: 470px;
+  background-image: url(../images/skull.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -245px;
+  top: 350px;
+}
+
+.interaction {
+  text-align: center;
+  border: 2px #ccc dashed;
+  border-radius: 25%;
+  height: 400px;
+}
+
+.compliment {
+  background-color: #ff0000;
+}
+
+.dropzone {
+  position: relative;
+  top: 100px;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  padding: 100px;
+  width: 10%;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#a {
+  left: 5%;
+  position: relative;
+  background-color: #ffc966;
+}
+
+#b {
+  float: right;
+  background-color: #99d6ff;
+  right: 5%;
+}
+
+#a.drop-targetA {
+  background-color: #ffad33;
+  border-color: #595959;
+  border-style: dashed;
+}
+
+#b.drop-targetB {
+  background-color: #33adff;
+  border-color: #595959;
+  border-style: dashed;
+}
+
+#c {
+  left: 5%;
+  position: relative;
+  background-color: #ffff66;
+}
+
+#d {
+  float: right;
+  top: -157px;
+  background-color: #ff99ff;
+  right: 5%;
+}
+
+#c.drop-targetC {
+  background-color: #ffff33;
+  border-color: #595959;
+  border-style: dashed;
+}
+
+#d.drop-targetD {
+  background-color: #ff33ff;
+  border-color: #595959;
+  border-style: dashed;
+}
+
+#e {
+  top: 20%;
+  left: 30%;
+  position: relative;
+  background-color: #d9d9d9;
+}
+
+#e.drop-targetE {
+  background-color: white;
+  border-color: #595959;
+  border-style: dashed;
+}
+
+.drag-drop {
+  position: relative;
+  max-height: 50px;
+  min-height: 50px;
+  max-width: 70px;
+  z-index: 2;
+  color: #fff;
+  border: solid 2px   #1a1a1a;
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  transition: background-color 0.3s;
+  border-radius: 25%;
+}
+
+.drag-drop p {
+  margin-top: 22%;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #29e;
+  border-color: #fff;
+}
+
+.top {
+  left: 38%;
+  bottom: 30px;
+  float: left;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+}
+
+.bottom {
+  left: 12.5%;
+  bottom: -25px;
+  float: left;
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+#timer {
+  position: fixed;
+  top: 500px;
+  font-size: 40px;
+  z-index: -1;
+  left: 85%;
+}
+
+.critical {
+  color: red;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SUBSETS TRIAL</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/subsets_trial.css">
+  </head>
+  <body></body>
+  <header class="lesson-box">
+    <div class="title"></div>
+  </header>
+  <section class="content">
+    <audio id="bassa" src="audio/mombassa.mp3"></audio>
+    <article>
+      <div id="intro">
+        <h1>Trial 2</h1>
+        <hr>
+        <div class="text">
+          <h4>This is a time trial. You have 5 minutes to complete all 3 challenges. </h4>
+        </div>
+        <hr>
+        <input type="button" value="Begin" onclick="begin()">
+      </div>
+      <div id="trial" class="hidden">
+        <h1>Challenge 1</h1>
+        <hr>
+        <div class="text">
+          <h4>B is a subset of A. Ensure that A contains at least one element of every color and that B is non-empty, containing even numbers only. </h4>
+        </div>
+        <hr>
+        <article class="interaction">
+          <div id="item" class="drag-drop red top"> 
+            <p>1</p>
+          </div>
+          <div id="item" class="drag-drop blue top"> 
+            <p>2</p>
+          </div>
+          <div id="item" class="drag-drop green top"> 
+            <p>3</p>
+          </div>
+          <div id="item" class="drag-drop green bottom"> 
+            <p>4</p>
+          </div>
+          <div id="item" class="drag-drop red bottom"> 
+            <p>5</p>
+          </div>
+          <div id="item" class="drag-drop blue bottom"> 
+            <p>6</p>
+          </div>
+          <div class="dz">
+            <div id="set1" class="set dropzone">
+              <p>A</p>
+            </div>
+            <div id="subset1" class="subset dropzone">
+              <p>B</p>
+            </div>
+          </div>
+        </article>
+        <h1>Challenge 2</h1>
+        <hr>
+        <div class="text">
+          <h4>B is a subset of A. Form A and B in such a way that B contains at least one green number and its sum is two times less the sum of A. </h4>
+        </div>
+        <hr>
+        <article class="interaction">
+          <div id="item" class="drag-drop red top"> 
+            <p>1</p>
+          </div>
+          <div id="item" class="drag-drop blue top"> 
+            <p>2</p>
+          </div>
+          <div id="item" class="drag-drop green top"> 
+            <p>3</p>
+          </div>
+          <div id="item" class="drag-drop green bottom"> 
+            <p>4</p>
+          </div>
+          <div id="item" class="drag-drop red bottom"> 
+            <p>5</p>
+          </div>
+          <div id="item" class="drag-drop blue bottom"> 
+            <p>6</p>
+          </div>
+          <div class="dz">
+            <div id="set2" class="set dropzone">
+              <p>A</p>
+            </div>
+            <div id="subset2" class="subset dropzone">
+              <p>B</p>
+            </div>
+          </div>
+        </article>
+        <h1>Challenge 3</h1>
+        <hr>
+        <div class="text">
+          <h4>B is a subset of A. Form A and B in such a way that A contains an element of every color and its sum is the sum of B squared.  </h4>
+        </div>
+        <hr>
+        <article class="interaction">
+          <div id="item" class="drag-drop red top"> 
+            <p>1</p>
+          </div>
+          <div id="item" class="drag-drop blue top"> 
+            <p>2</p>
+          </div>
+          <div id="item" class="drag-drop green top"> 
+            <p>3</p>
+          </div>
+          <div id="item" class="drag-drop green bottom"> 
+            <p>4</p>
+          </div>
+          <div id="item" class="drag-drop red bottom"> 
+            <p>5</p>
+          </div>
+          <div id="item" class="drag-drop blue bottom"> 
+            <p>6</p>
+          </div>
+          <div class="dz">
+            <div id="set3" class="set dropzone">
+              <p>A</p>
+            </div>
+            <div id="subset3" class="subset dropzone">
+              <p>B</p>
+            </div>
+          </div>
+        </article>
+        <hr>
+        <input type="button" value="Submit" onclick="submit()">
+        <div id="timer"> </div>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/subsets_trial.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+      
+      
+      
+      
+        
+    </script>
+  </footer>
+</html>

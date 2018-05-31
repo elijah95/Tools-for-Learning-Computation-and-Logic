@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SUBSETS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/subsets.css">
+  </head>
+  <body>
+    <header class="lesson-box">
+      <div class="title"></div>
+    </header>
+    <section class="content">
+      <article>
+        <h1>The Subset Relationship</h1>
+        <hr>
+        <p>There is a family of comparison operators among sets that is analogous to the comparisons among numbers. If $S$ and $T$ are sets, we say that $S \subset T$ if every member of $S$ is also a member of $T$. We can express this in words several ways: "$S$ is a subset of $T$", "$T$ is a superset of $S$", "$S$ is contained in $T$", or "$T$ contains $S$". We say that $S \subset T$, if $S \subseteq T$, and there is at least one element of $T$ that is not also a member of $S$. The $S \subset T$ relationship can be read "$S$ is a proper subset of $T$", "$T$ is a proper superset of $S$", "$S$ is properly contained in $T$", or "$T$ properly contains $S$". As with "less than", we can reverse the direction of the comparison; $S \supset T$ is synonymous with $T \subset S$, and $S \supseteq T$ is synonymous with $T \subseteq S$.</p>
+        <hr>
+        <article class="interaction">
+          <div id="emptyset" class="hidden">$$\emptyset$$</div>
+          <div id="subs" class="hidden"> </div>
+          <div id="membs" class="hidden"> </div>
+          <div id="compls" class="hidden"> </div>
+          <div id="red" class="hidden"> $$\{ Red \}$$</div>
+          <div id="blue" class="hidden"> $$\{ Blue \}$$</div>
+          <div id="green" class="hidden"> $$\{ Green \}$$</div>
+          <div id="redblue" class="hidden"> $$\{ Red, Blue \}$$</div>
+          <div id="redgreen" class="hidden"> $$\{ Red, Green \}$$</div>
+          <div id="bluegreen" class="hidden"> $$\{ Blue, Green \}$$</div>
+          <div id="redbluegreen" class="hidden"> $$\{ Red, Blue, Green \}$$</div>
+          <div id="redina" class="hidden">$$ Red \in A $$</div>
+          <div id="blueina" class="hidden">$$ Blue \in A $$</div>
+          <div id="greenina" class="hidden">$$ Green \in A $$</div>
+          <div id="rednotina" class="hidden">$$ Red \notin A$$</div>
+          <div id="bluenotina" class="hidden">$$ Blue \notin A$$</div>
+          <div id="greennotina" class="hidden">$$ Green \notin A$$</div>
+          <div id="redinb" class="hidden">$$ Red \in B $$</div>
+          <div id="blueinb" class="hidden">$$ Blue \in B $$</div>
+          <div id="greeninb" class="hidden">$$ Green \in B $$</div>
+          <div id="rednotinb" class="hidden">$$ Red \notin B$$</div>
+          <div id="bluenotinb" class="hidden">$$ Blue \notin B$$</div>
+          <div id="greennotinb" class="hidden">$$ Green \notin B$$</div>
+          <div id="item" class="draggable drag-drop red"> 
+            <p>Red</p>
+          </div>
+          <div id="item" class="draggable drag-drop blue"> 
+            <p>Blue</p>
+          </div>
+          <div id="item" class="draggable drag-drop green"> 
+            <p>Green</p>
+          </div>
+          <div class="dz">
+            <div id="set" class="dropzone">
+              <p>A</p>
+            </div>
+            <div id="subset" class="dropzone">
+              <p>B</p>
+            </div>
+          </div>
+          <div class="row out">
+            <figure id="a" class="columns six">            
+              <div id="outputA"></div>
+              <div id="membershipA"> </div>
+            </figure>
+            <figure id="b" class="columns six">           
+              <div id="outputB"></div>
+              <div id="membershipB"> </div>
+            </figure>
+          </div>
+          <div id="emptyset" class="hidden">$$\emptyset$$</div>
+          <div id="subs" class="hidden"> </div>
+          <div id="membsA" class="hidden"> </div>
+          <div id="complsA" class="hidden"> </div>
+          <div id="membsB" class="hidden"> </div>
+          <div id="complsB" class="hidden"> </div>
+        </article>
+        <hr>
+        <input type="button" value="Main" onclick="location.href='landing.html'">
+      </article>
+    </section>
+  </body>
+  <footer>
+    <script src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="js/interact.js"></script>
+    <script src="js/drag.js"></script>
+    <script src="js/subsets2.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+      
+      
+      
+      
+        
+    </script>
+  </footer>
+</html>

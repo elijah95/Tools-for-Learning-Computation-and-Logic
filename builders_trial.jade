@@ -1,0 +1,156 @@
+//output: builders_trial.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title BUILDERS
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/builders_trial.css")
+    
+  body
+
+    header.lesson-box
+       .title
+       .fgr
+       
+    section.content
+      #emptyset.hidden $$\emptyset$$
+
+      #1to3.hidden $$\{x \mid  1 \leq x \leq 3\}$$
+      #1to2.hidden $$\{x \mid  1 \leq x \leq 2\}$$
+      #2to3.hidden $$\{x \mid  2 \leq x \leq 3\}$$
+
+      #red.hidden $$\{x \mid  Red(x)\}$$
+      #blue.hidden $$\{x \mid  Blue(x)\}$$
+
+      #odd.hidden $$\{x \mid   Odd(x)\}$$
+      #oddr.hidden $$\{x \mid  Odd(x) \land Red(x)\}$$
+      #oddb.hidden $$\{x \mid  Odd(x)\land Blue(x) \}$$
+
+      #even.hidden $$\{x \mid   Even(x)\}$$
+      #evenr.hidden $$\{x \mid  Even(x) \land Red(x)\}$$
+      #evenb.hidden $$\{x \mid  Even(x) \land Blue(x) \}$$
+      
+      audio(id="bassa" src="audio/mombassa.mp3")
+
+      article
+        #intro
+          h1 Trial 4
+          hr
+          h4 This is a time trial. You have 5 minutes to complete all 3 challenges. 
+          hr
+          input(type="button" value="Begin" onclick="begin()")
+          
+          
+        #trial.hidden
+          
+          h1 Challenge 1
+          hr
+          h4 Form the following comprehension: $\tiny \{x \mid  Even(x) \land Red(x)\}$
+          hr
+          
+          article.interaction
+          
+            #item.drag-drop.red.top 
+              p 1
+
+            #item.drag-drop.red.top 
+              p 2
+            
+            #item.drag-drop.red.top 
+              p 3
+          
+          
+            #item.drag-drop.blue.bottom 
+              p 1
+
+            #item.drag-drop.blue.bottom 
+              p 2
+            
+            #item.drag-drop.blue.bottom 
+              p 3
+          
+            #comprA.dropzone
+              p A
+          
+          
+          h1 Challenge 2
+          hr
+          h4 Form the following comprehension: $\tiny \{x \mid  Odd(x)\land Blue(x) \}$
+          hr
+          
+          article.interaction
+            #item.drag-drop.red.top 
+              p 1
+
+            #item.drag-drop.red.top 
+              p 2
+            
+            #item.drag-drop.red.top 
+              p 3
+          
+          
+            #item.drag-drop.blue.bottom 
+              p 1
+
+            #item.drag-drop.blue.bottom 
+              p 2
+            
+            #item.drag-drop.blue.bottom 
+              p 3
+          
+            #comprB.dropzone
+              p B
+              
+          h1 Challenge 3
+          hr
+          h4 Form the following comprehension: $\tiny \{x \mid  1 \leq x \leq 3\}$
+          hr
+          
+          article.interaction
+            #item.drag-drop.red.top 
+              p 1
+
+            #item.drag-drop.red.top 
+              p 2
+            
+            #item.drag-drop.red.top 
+              p 3
+          
+          
+            #item.drag-drop.blue.bottom 
+              p 1
+
+            #item.drag-drop.blue.bottom 
+              p 2
+            
+            #item.drag-drop.blue.bottom 
+              p 3
+          
+            #comprC.dropzone
+              p C
+              
+            
+            
+            
+
+          hr  
+          input(type="button" value="Submit" onclick="submit()")
+          
+          #timer        
+
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    script(src="js/builders_trial.js")
+
+
+
+
+        
+  

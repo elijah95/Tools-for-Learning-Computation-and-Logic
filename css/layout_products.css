@@ -1,0 +1,259 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #ccc;
+  weight: 300;
+}
+
+figure {
+  margin: auto;
+}
+
+.content article {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.lesson-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../images/math.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.title {
+  height: 100px;
+  width: 100%;
+  background-image: url(../images/products.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.interaction {
+  text-align: center;
+  border: 2px #ccc dashed;
+  border-radius: 25%;
+  height: 300px;
+}
+
+.dropzone {
+  position: relative;
+  top: 150px;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  padding: 100px;
+  width: 15%;
+  transition: background-color 0.3s;
+  border-radius: 50%;
+  text-align: center;
+  height: 40px;
+}
+
+.dz {
+  position: relative;
+  bottom: 102px;
+  text-align: center;
+  height: 502px;
+  display: inline-flex;
+  width: 100%;
+}
+
+#line {
+  border-right: 2px #ccc dashed;
+  height: 100%;
+  margin-right: -2%;
+}
+
+.dzcontainer {
+  width: 50%;
+  height: 100%;
+}
+
+#a {
+  left: 11%;
+  position: relative;
+  background-color: #ffc966;
+}
+
+#b {
+  background-color: #99d6ff;
+  left: 13%;
+}
+
+#a.drop-targetA {
+  background-color: #ffad33;
+  border-color: #595959;
+  border-style: dashed;
+}
+
+#b.drop-targetB {
+  background-color: #33adff;
+  border-color: #595959;
+  border-style: dashed;
+}
+
+.drag-drop {
+  position: relative;
+  max-height: 50px;
+  min-height: 50px;
+  max-width: 70px;
+  z-index: 2;
+  color: #fff;
+  border: solid 2px   #1a1a1a;
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  transition: background-color 0.3s;
+  border-radius: 25%;
+}
+
+.drag-drop p {
+  margin-top: 22%;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #29e;
+  border-color: #fff;
+}
+
+.top {
+  left: 28%;
+  top: 60px;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.bottom {
+  left: 22.5%;
+  top: 200px;
+  float: left;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.output {
+  top: -22%;
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  border: 4px  #595959 dashed;
+}
+
+.stars3 {
+  position: relative;
+  left: 31.30%;
+  width: 80px;
+  height: 70px;
+  float: left;
+}
+
+.stars2 {
+  position: relative;
+  left: 37.50%;
+  width: 80px;
+  height: 70px;
+  float: left;
+}
+
+.stars1 {
+  position: relative;
+  left: 43.50%;
+  width: 80px;
+  height: 70px;
+}
+
+#box {
+  margin-left: -3%;
+  width: 52px;
+  height: 52px;
+  border: 1px solid black;
+  border-style: hidden;
+}
+
+#disc {
+  margin-left: 1%;
+  width: 52px;
+  height: 52px;
+  border-style: hidden;
+}
+
+#star {
+  margin-left: 0.2%;
+  width: 52px;
+  height: 52px;
+  border-style: hidden;
+}
+
+#products {
+  position: relative;
+  height: 260px;
+  width: 100%;
+}
+
+#includedContent {
+  position: relative;
+  top: 40px;
+}
+
+#noInclude {
+  position: relative;
+  top: 55px;
+  left: 35%;
+  text-align: center;
+  font-size: 28px;
+  border-radius: 50%;
+  width: 30%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  border: 4px  #595959 dashed;
+  background: linear-gradient(90deg, #ffc966, #99d6ff);
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+#leftText {
+  position: relative;
+  right: 25%;
+  transform: rotate(-90deg);
+  top: -135px;
+  font-size: 18px;
+}
+
+#bottomText {
+  position: relative;
+  top: -20px;
+  font-size: 18px;
+}

@@ -1,0 +1,212 @@
+//output: setops.html
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title SET OPS
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/setops.css")
+    
+  body
+
+    header.lesson-box
+       .title
+       .fgr
+       
+    section.content
+      
+      article
+        
+        h1 Union, Intersection and Difference
+        p The most common ways to combine sets are with the following three operations:
+        ol
+          li The $\it union$ of two sets $S$ and $T$, denoted $S \cup T$, is the set containing the elements that are in $S$ or $T$, or both
+          li The $\it intersection$ of sets $S$ and $T$, written $S \cap T$, is the set containing the elements that are in both $S$ and $T$.
+          li The $\it complement$ of sets $S$ with $\it universe$ $U$, denoted $S^\complement = U \setminus S$, is the set containing those elements that are in $U$ but not in $S$. 
+        
+        p NOTE: The universe $U$ is the set containing all elements. It's content is always constant and consists of the union of the set $S$ and its complement i.e. $U = S \cup S^\complement$.  
+          
+        hr
+        
+        #Aempty.hidden $$A = \emptyset$$
+        #Bempty.hidden $$B = \emptyset$$
+        #AuBempty.hidden $$A \cup B = \emptyset$$
+        
+        #Cempty.hidden $$C = \emptyset$$
+        #Dempty.hidden $$D = \emptyset$$
+        #CnDempty.hidden $$C \cap D = \emptyset$$
+        
+        #Eempty.hidden $$E = \emptyset$$
+        #Uempty.hidden $$U = \emptyset$$
+        #UcompEempty.hidden $$E^\complement = \emptyset$$
+        
+
+        #A1.hidden $$A = \{ 1 \}$$
+        #A2.hidden $$A = \{ 2 \}$$
+        #A3.hidden $$A = \{ 3 \}$$
+        #A12.hidden $$A = \{ 1,2 \}$$
+        #A23.hidden $$A = \{ 2,3 \}$$
+        #A13.hidden $$A = \{ 1,3 \}$$
+        #A123.hidden $$A = \{ 1,2,3 \}$$
+        
+        #B1.hidden $$B = \{ 1 \}$$
+        #B2.hidden $$B = \{ 2 \}$$
+        #B3.hidden $$B = \{ 3 \}$$
+        #B12.hidden $$B = \{ 1,2 \}$$
+        #B23.hidden $$B = \{ 2,3 \}$$
+        #B13.hidden $$B = \{ 1,3 \}$$
+        #B123.hidden $$B = \{ 1,2,3 \}$$
+        
+        #C1.hidden $$C = \{ 1 \}$$
+        #C2.hidden $$C = \{ 2 \}$$
+        #C3.hidden $$C = \{ 3 \}$$
+        #C12.hidden $$C = \{ 1,2 \}$$
+        #C23.hidden $$C = \{ 2,3 \}$$
+        #C13.hidden $$C = \{ 1,3 \}$$
+        #C123.hidden $$C = \{ 1,2,3 \}$$
+        
+        #D1.hidden $$D = \{ 1 \}$$
+        #D2.hidden $$D = \{ 2 \}$$
+        #D3.hidden $$D = \{ 3 \}$$
+        #D12.hidden $$D = \{ 1,2 \}$$
+        #D23.hidden $$D = \{ 2,3 \}$$
+        #D13.hidden $$D = \{ 1,3 \}$$
+        #D123.hidden $$D = \{ 1,2,3 \}$$
+        
+        #E1.hidden $$E = \{ 1 \}$$
+        #E2.hidden $$E = \{ 2 \}$$
+        #E3.hidden $$E = \{ 3 \}$$
+        #E12.hidden $$E = \{ 1,2 \}$$
+        #E23.hidden $$E = \{ 2,3 \}$$
+        #E13.hidden $$E = \{ 1,3 \}$$
+        #E123.hidden $$E = \{ 1,2,3 \}$$
+          
+          //-  
+            #U1.hidden $$U = \{ 1 \}$$
+            #U2.hidden $$U = \{ 2 \}$$
+            #U3.hidden $$U = \{ 3 \}$$
+            #U12.hidden $$U = \{ 1,2 \}$$
+            #U23.hidden $$U = \{ 2,3 \}$$
+            #U13.hidden $$U = \{ 1,3 \}$$
+        #U123.hidden $$U = \{ 1,2,3 \}$$
+        
+        #AuB1.hidden $$A \cup B = \{ 1 \}$$
+        #AuB2.hidden $$A \cup B = \{ 2 \}$$
+        #AuB3.hidden $$A \cup B = \{ 3 \}$$
+        #AuB12.hidden $$A \cup B = \{ 1,2 \}$$
+        #AuB23.hidden $$A \cup B = \{ 2,3 \}$$
+        #AuB13.hidden $$A \cup B = \{ 1,3 \}$$
+        #AuB123.hidden $$A \cup B = \{ 1,2,3 \}$$
+
+        #CnD1.hidden $$C \cap D = \{ 1 \}$$
+        #CnD2.hidden $$C \cap D = \{ 2 \}$$
+        #CnD3.hidden $$C \cap D = \{ 3 \}$$
+        #CnD12.hidden $$C \cap D = \{ 1,2 \}$$
+        #CnD23.hidden $$C \cap D = \{ 2,3 \}$$
+        #CnD13.hidden $$C \cap D = \{ 1,3 \}$$
+        #CnD123.hidden $$C \cap D = \{ 1,2,3 \}$$
+        
+        #UcompE1.hidden $$E^\complement = \{ 1 \}$$
+        #UcompE2.hidden $$E^\complement = \{ 2 \}$$
+        #UcompE3.hidden $$E^\complement = \{ 3 \}$$
+        #UcompE12.hidden $$E^\complement = \{ 1,2 \}$$
+        #UcompE23.hidden $$E^\complement = \{ 2,3 \}$$
+        #UcompE13.hidden $$E^\complement = \{ 1,3 \}$$
+        #UcompE123.hidden $$E^\complement = \{ 1,2,3 \}$$
+        
+        article.interaction
+          #item.drag-drop.top 
+            p 1
+
+          #item.drag-drop.top 
+            p 2
+          
+          #item.drag-drop.top 
+            p 3
+            
+          #item.drag-drop.bottom 
+            p 1
+
+          #item.drag-drop.bottom 
+            p 2
+          
+          #item.drag-drop.bottom 
+            p 3
+  
+          #b.dropzone
+            p B
+          #a.dropzone
+            p A
+          
+          #output.output
+
+        hr  
+        
+        article.interaction
+          #item.drag-drop.top 
+            p 1
+
+          #item.drag-drop.top 
+            p 2
+          
+          #item.drag-drop.top 
+            p 3
+            
+          #item.drag-drop.bottom 
+            p 1
+
+          #item.drag-drop.bottom 
+            p 2
+          
+          #item.drag-drop.bottom 
+            p 3
+  
+          #c.dropzone
+            p C
+          #d.dropzone
+            p D
+          
+          #outputIntersection.output
+        hr  
+        
+        article.interaction.compliment
+          #item.drag-drop.top.comp
+            p 1
+
+          #item.drag-drop.top.comp 
+            p 2
+          
+          #item.drag-drop.top.comp 
+            p 3
+  
+          #e.dropzone
+            p E
+            //-
+              #f.dropzone
+                p F
+              
+          #outputComp.output
+        hr 
+        input(type="button" value="Main" onclick="location.href='landing.html'")
+
+
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    script(src="js/setops_union.js")
+    script(src="js/setops_intersection.js")
+    script(src="js/setops_complement.js")
+
+
+
+
+
+        
+  

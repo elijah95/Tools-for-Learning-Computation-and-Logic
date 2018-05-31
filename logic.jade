@@ -1,0 +1,198 @@
+//output: logic.html
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title LOGIC
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/logic.css")
+    
+  body
+
+    header.lesson-box
+     .title
+     .fgr
+       
+    section.content
+      #p.hidden p
+      #notp.hidden $\color{red}\lnot$p
+      #notpclear.hidden $\lnot$p
+
+      
+      #q.hidden q
+      #notq.hidden $\color{red}\lnot$q
+      #notqclear.hidden $\lnot$q
+
+    
+      #and.hidden $\land$
+      #or.hidden $\lor$
+      #not.hidden $\lnot$
+
+      #ptrue.hidden  $$p = \color{blue}{true}$$
+      #pfalse.hidden  $$p = \color{red}{false}$$
+      
+      #qtrue.hidden  $$q = \color{blue}{true}$$
+      #qfalse.hidden  $$q = \color{red}{false}$$
+      
+      #notptrue.hidden  $$\lnot p = \color{blue}{true}$$
+      #notpfalse.hidden  $$\lnot p = \color{red}{false}$$
+      
+      #notqtrue.hidden  $$\lnot q = \color{blue}{true}$$
+      #notqfalse.hidden  $$\lnot q = \color{red}{false}$$
+
+
+      #andtrue.hidden  $$p \land q =  \color{blue}{true}$$
+      #andfalse.hidden  $$p \land q = \color{red}{false}$$
+      
+      #ortrue.hidden  $$p \lor q =  \color{blue}{true}$$
+      #orfalse.hidden  $$p \lor q = \color{red}{false}$$
+      
+      #demPandQ.hidden $\not p \lor \not q$
+      #demNandQ.hidden $ p \lor \not q$
+      #demPandN.hidden $\not p \lor q$
+      #demNandN.hidden $ p \lor q$
+      
+      #demPorQ.hidden $\not p \land \not q$
+      #demNorQ.hidden $ p \land \not q$
+      #demPorN.hidden $\not p \land q$
+      #demNorN.hidden $ p \land q$
+      
+      #xortrue.hidden  $$p \oplus q = \color{blue}{true}$$
+      #xorfalse.hidden  $$p \oplus q = \color{red}{false}$$
+      
+      #ifftrue.hidden  $$p \leftrightarrow q = \color{blue}{true}$$
+      #ifffalse.hidden  $$p \leftrightarrow q = \color{red}{false}$$
+
+
+      
+      article
+        h1 Logic
+        hr
+        p
+          | Logical expressions can contain logical operators such as: AND $(\land)$, OR $(\lor)$, and NOT $(\lnot)$. 
+          | When the values of the operands of the logical operators in a logical expression are known, the value of the
+          | expression can be determined using rules such as:
+        ol
+          li  The expression $p\land q$ is true only when both $p$ and $q$ are true; it is false otherwise.
+          li  The expression $p\lor q$ is true if either $p$ or $q$, or both are true; it is false otherwise.
+          li  The expression $\lnot p$ is true if $p$ is false, and false if $p$ is true.
+
+        h6
+          | NOTE: To change the logical operator of the drop zone or the truth value of a literal,
+          | simply double click on the object.
+        hr
+        article.interaction
+        
+          .item.drag-drop.blue.true p true
+          .item.drag-drop.blue.true q true
+          
+          .row.img-row
+            figure.columns.three
+              #tri.dropzone.and $\land$
+          
+          .row.img-row
+            figure.columns.four
+              h5#output_tri.output.output_and.hidden
+
+
+                  
+        hr
+        h4 DeMorgan’s Laws
+        p 
+          | There are two laws that allow us to push NOTs through an expression of ANDs and ORs, resulting in an
+          | expression in which all the negations apply to propositional variables:
+        ol 
+          li $\lnot (p \land q) \equiv \lnot p \lor \lnot q$
+          li $\lnot (p \lor q) \equiv \lnot p \land \lnot q$
+          
+        hr
+
+        article.interaction
+          #demorganP.lit.item.drag-drop.blue.dem p 
+          #op.item.drag-drop.yellow.and.dem 
+          #demorganQ.lit.item.drag-drop.blue.dem q 
+          
+          .row.img-row
+            figure.columns.three
+              #demorgan.dropzone 
+                p $$demorgan$$
+          .row.img-row
+            figure.columns.three
+              h5#output_demorgan.output.hidden
+              
+        hr
+        h4 Exclusive OR 
+        p 
+          | It gains the name "exclusive or" because the meaning of "or" is ambiguous when both operands are true; 
+          | the exclusive or operator excludes that case. This is sometimes thought of as "one or the other but not both". 
+          | This could be written as "A or B, but not, A and B". 
+          
+          br
+          br
+          | The XOR ($\oplus$) logical operator outputs true whenever either p or q is true, but not both; it is false 
+          | otherwise.
+          
+        hr
+        
+        article.interaction
+          .item.drag-drop.blue.true p true
+          .item.drag-drop.blue.true q true
+          
+          .row.img-row
+            figure.columns.three
+              #xor.dropzone 
+                p $$\oplus$$
+          .row.img-row
+            figure.columns.three
+              h5#output_xor.output.hidden
+          
+        hr
+        h4 Logical equality
+        p  
+          | Logical equality is a logical operator that corresponds to equality in Boolean algebra 
+          | It gives the functional value true if both functional arguments have the same logical value, 
+          | and false if they are different.          
+          | It is also logically equivalent to $(p \land q) \lor (\lnot p \land \lnot q)$  ot the XNOR (exclusive not or) 
+          | boolean operator, meaning "both or neither". 
+          
+          br
+          br
+          | The logical equality ($\leftrightarrow$) logical operator outputs true whenever both p and q are true or both are false; it is false 
+          | otherwise.
+        hr
+        
+        article.interaction
+          .item.drag-drop.blue.true p true
+          .item.drag-drop.blue.true q true
+          
+          .row.img-row
+            figure.columns.three
+              #iff.dropzone 
+                p $$\leftrightarrow$$
+          .row.img-row
+            figure.columns.three
+              h5#output_iff.output.hidden
+
+        hr
+        input(type="button" value="Main" onclick="location.href='landing.html'")
+
+  footer
+    script(src="mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+    script(type='text/x-mathjax-config').
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\\(','\\)']]}});
+    script(src="js/interact.js")
+    script(src="js/drag.js")
+    script(src="js/logic_tri.js")
+    script(src="js/logic_demorgan.js")
+    script(src="js/logic_xor.js")
+    script(src="js/logic_iff.js")
+
+
+
+
+
+
+        
+  

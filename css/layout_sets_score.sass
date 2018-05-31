@@ -1,0 +1,87 @@
+// compileExpanded: layout_sets_score.css
+
+body
+  font-family: "Open Sans", sans-serif
+
+h1
+  color: #ccc
+  weight: 300
+
+figure
+  margin: auto
+
+.content
+  article
+    padding: 100px 0
+    max-width: 640px
+    margin: 0 auto
+    text-align: center
+
+#score
+  position: relative
+  top: 198px
+  left: 0.5%
+
+#spinbdr
+  border: 6px dashed #ccc
+  border-radius: 50%
+  padding-top: 105px
+  padding-bottom: 105px
+  width: 33%
+  position: relative
+  left: 32.15%
+  top: 50px
+  -webkit-animation: rotate 2s linear infinite
+
+#spinbdr.blk
+  border-color: black
+  transition: background-color 0.3s
+
+
+@-webkit-keyframes rotate
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(180deg)
+
+#myProgress
+  position: relative
+  top: -168.1px
+  left: 3%
+
+  width: 93%
+  height: 200px
+  background-color: grey
+  transform: rotate(-90deg)
+  margin-top: 50px
+  z-index: -1
+  opacity: 0.8
+
+
+#myBar
+  width: 1%
+  height: 200px
+  color: white
+
+
+#myBar.bad
+  background-color: red
+  transition: background-color 0.3s
+
+#myBar.mid
+  background-color: #ffff00
+  transition: background-color 0.3s
+
+
+#myBar.good
+  background-color: #66ff33
+  transition: background-color 0.3s
+
+#b1
+  position: relative
+  top: -15px
+  left: 35%
+#b2
+  position: relative
+  top: 30px
+  left: 9%
